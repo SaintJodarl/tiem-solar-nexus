@@ -118,7 +118,7 @@ const FeaturedProducts = () => {
                 
                 <div className="flex gap-2">
                   <Button 
-                    className="flex-1" 
+                    className="flex-1 hover:bg-[#ffd901] hover:text-black" 
                     onClick={() => addToCart(product.id, product.name)}
                   >
                     <ShoppingCart className="h-4 w-4 mr-2" />

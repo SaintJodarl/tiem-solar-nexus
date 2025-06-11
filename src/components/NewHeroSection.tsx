@@ -24,7 +24,7 @@ const NewHeroSection = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Get ahead of your energy needs with reliable solar power solutions.
+            Stay Ahead of Outages — Choose Reliable Solar Energy That Works.
           </p>
 
           <Button 

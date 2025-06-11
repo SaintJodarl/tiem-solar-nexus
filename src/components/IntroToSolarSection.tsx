@@ -29,7 +29,7 @@ const IntroToSolarSection = () => {
             Why Solar? Why Now?
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            With Nigeria's abundant sunshine and rising electricity costs, solar energy offers the perfect solution for reliable, affordable power. Solar technology has never been more efficient or accessible, making now the ideal time to make the switch to clean, sustainable energy.
+            With rising electricity tariffs and increasing fuel costs following subsidy removal, solar energy has become the smart, reliable, and cost-effective solution. Today's solar technology is more efficient and accessible than ever—making now the ideal time to switch to clean, sustainable power. Nigeria enjoys abundant sunshine, and even in cloudy conditions, modern solar systems continue to deliver dependable performance—keeping you powered, always.
           </p>
         </div>
 
