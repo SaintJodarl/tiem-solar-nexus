@@ -7,17 +7,20 @@ const IntroToSolarSection = () => {
     {
       icon: '☀️',
       title: 'Abundant Sunshine',
-      description: 'Nigeria receives excellent solar radiation year-round'
+      description: 'Nigeria receives excellent solar radiation year-round',
+      image: 'https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=400&h=300&fit=crop' // Solar panels under bright sun
     },
     {
       icon: '💰',
       title: 'Cost Savings',
-      description: 'Reduce electricity bills by up to 90%'
+      description: 'Reduce electricity bills by up to 90%',
+      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop' // Money/savings concept
     },
     {
       icon: '🌱',
       title: 'Environmental Impact',
-      description: 'Clean, renewable energy for a sustainable future'
+      description: 'Clean, renewable energy for a sustainable future',
+      image: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop' // Green environment/sustainability
     }
   ];
 
@@ -39,9 +42,9 @@ const IntroToSolarSection = () => {
               <CardContent className="pt-6">
                 <div className="mb-4">
                   <img
-                    src={`https://images.unsplash.com/photo-${index === 0 ? '1508615039623-a25605d2b022' : index === 1 ? '1579621970563-ebec7560ff3e' : '1518495973542-4542c06a5843'}?w=300&h=200&fit=crop`}
+                    src={benefit.image}
                     alt={benefit.title}
-                    className="w-16 h-16 mx-auto rounded-full object-cover mb-4"
+                    className="w-full h-48 mx-auto rounded-lg object-cover mb-4"
                   />
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">{benefit.title}</h4>

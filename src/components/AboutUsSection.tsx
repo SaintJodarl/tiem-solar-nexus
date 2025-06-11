@@ -29,8 +29,8 @@ const AboutUsSection = () => {
           
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1559302504-64aae6ca6834?w=600&h=400&fit=crop"
-              alt="TIEM Energy team and solar installation"
+              src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop"
+              alt="TIEM Energy team and solar installation in Nigeria"
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>

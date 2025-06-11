@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,19 +13,16 @@ const ContactSection = () => {
     phone: '',
     message: ''
   });
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
@@ -40,7 +38,9 @@ const ContactSection = () => {
       message: ''
     });
   };
-  return <section id="contact" className="py-20 bg-background">
+
+  return (
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -65,22 +65,53 @@ const ContactSection = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name</Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder="Your full name" required />
+                    <Input 
+                      id="name" 
+                      name="name" 
+                      value={formData.name} 
+                      onChange={handleInputChange} 
+                      placeholder="Your full name" 
+                      required 
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} placeholder="+234 XXX XXX XXXX" required />
+                    <Input 
+                      id="phone" 
+                      name="phone" 
+                      type="tel" 
+                      value={formData.phone} 
+                      onChange={handleInputChange} 
+                      placeholder="+234 XXX XXX XXXX" 
+                      required 
+                    />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="your.email@example.com" required />
+                  <Input 
+                    id="email" 
+                    name="email" 
+                    type="email" 
+                    value={formData.email} 
+                    onChange={handleInputChange} 
+                    placeholder="your.email@example.com" 
+                    required 
+                  />
                 </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Tell us about your solar energy needs..." className="min-h-[120px]" required />
+                  <Textarea 
+                    id="message" 
+                    name="message" 
+                    value={formData.message} 
+                    onChange={handleInputChange} 
+                    placeholder="Tell us about your solar energy needs..." 
+                    className="min-h-[120px]" 
+                    required 
+                  />
                 </div>
                 
                 <Button type="submit" className="w-full">
@@ -100,6 +131,7 @@ const ContactSection = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
+                {/* Contact info sections remain the same */}
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">📞</div>
                   <div>
@@ -151,6 +183,13 @@ const ContactSection = () => {
 
             <Card className="bg-primary/10">
               <CardContent className="p-6">
+                <div className="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=200&fit=crop"
+                    alt="Customer service representative"
+                    className="w-full h-32 object-cover rounded-lg mb-4"
+                  />
+                </div>
                 <h4 className="font-semibold text-foreground mb-3">Quick Response Guarantee</h4>
                 <p className="text-muted-foreground mb-4">We respond to all inquiries within minutes during business hours and provide free consultations for all potential customers.</p>
                 <div className="flex gap-3">
@@ -166,6 +205,8 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;

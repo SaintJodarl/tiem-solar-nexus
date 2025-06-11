@@ -7,17 +7,17 @@ const ClienteleCategoriesSection = () => {
     {
       title: 'Homeowners',
       description: 'Residential solar solutions for urban and rural homes',
-      image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=300&h=200&fit=crop'
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop'
     },
     {
       title: 'Businesses', 
       description: 'Commercial solar systems for SMEs and large enterprises',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=200&fit=crop'
+      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop'
     },
     {
       title: 'Institutions',
       description: 'Educational institutions and community organizations',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=200&fit=crop'
+      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop'
     }
   ];
 
@@ -41,7 +41,7 @@ const ClienteleCategoriesSection = () => {
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="w-20 h-20 mx-auto rounded-full object-cover mb-4"
+                    className="w-full h-48 mx-auto rounded-lg object-cover mb-4"
                   />
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">{category.title}</h4>
