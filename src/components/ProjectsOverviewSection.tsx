@@ -8,25 +8,25 @@ const ProjectsOverviewSection = () => {
       title: "2.5kVA Solar Install",
       location: "Lagos",
       description: "Residential solar system for 3-bedroom home",
-      image: "/placeholder.svg"
+      image: "https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=400&h=250&fit=crop"
     },
     {
       title: "5kVA Commercial Setup",
       location: "Abuja",
       description: "Business solar solution for retail store",
-      image: "/placeholder.svg"
+      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400&h=250&fit=crop"
     },
     {
       title: "10kVA Enterprise System",
       location: "Port Harcourt", 
       description: "Large-scale solar installation for office complex",
-      image: "/placeholder.svg"
+      image: "https://images.unsplash.com/photo-1559302504-64aae6ca6834?w=400&h=250&fit=crop"
     },
     {
       title: "3kVA Home Solution",
       location: "Ibadan",
       description: "Complete solar package for family residence",
-      image: "/placeholder.svg"
+      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=250&fit=crop"
     }
   ];
 
@@ -46,8 +46,12 @@ const ProjectsOverviewSection = () => {
           {projects.map((project, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-2 hover:border-primary/20">
               <CardHeader className="p-0">
-                <div className="aspect-video bg-muted rounded-t-lg flex items-center justify-center">
-                  <div className="text-4xl">🏠</div>
+                <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </CardHeader>
               <CardContent className="p-6">

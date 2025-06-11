@@ -7,17 +7,17 @@ const ClienteleCategoriesSection = () => {
     {
       title: 'Homeowners',
       description: 'Residential solar solutions for urban and rural homes',
-      icon: '🏠'
+      image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=300&h=200&fit=crop'
     },
     {
       title: 'Businesses', 
       description: 'Commercial solar systems for SMEs and large enterprises',
-      icon: '🏢'
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=200&fit=crop'
     },
     {
       title: 'Institutions',
       description: 'Educational institutions and community organizations',
-      icon: '🏫'
+      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=200&fit=crop'
     }
   ];
 
@@ -26,7 +26,7 @@ const ClienteleCategoriesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            WHO DO WE SERVE
+            Who Do We Serve
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             TIEM Energy provides tailored solar solutions for various client categories across Nigeria
@@ -37,7 +37,13 @@ const ClienteleCategoriesSection = () => {
           {categories.map((category, index) => (
             <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow border-2 hover:border-primary/20">
               <CardContent className="pt-6">
-                <div className="text-4xl mb-4">{category.icon}</div>
+                <div className="mb-6">
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="w-20 h-20 mx-auto rounded-full object-cover mb-4"
+                  />
+                </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">{category.title}</h4>
                 <p className="text-muted-foreground">
                   {category.description}
