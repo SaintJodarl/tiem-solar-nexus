@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const productCategories = [
@@ -13,12 +14,12 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    'About Us',
-    'Products',
-    'Installation Services',
-    'Warranties',
-    'FAQs',
-    'Contact',
+    { name: 'About Us', href: '/about' },
+    { name: 'Products', href: '/products' },
+    { name: 'Installation Services', href: '/services' },
+    { name: 'Warranties', href: '/services' },
+    { name: 'FAQs', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -63,9 +64,9 @@ const Footer = () => {
             <ul className="space-y-2">
               {productCategories.map((category) => (
                 <li key={category}>
-                  <a href="#" className="text-background/80 hover:text-accent transition-colors">
+                  <Link to="/products" className="text-background/80 hover:text-accent transition-colors">
                     {category}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -76,10 +77,10 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-accent">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-background/80 hover:text-accent transition-colors">
-                    {link}
-                  </a>
+                <li key={link.name}>
+                  <Link to={link.href} className="text-background/80 hover:text-accent transition-colors">
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -97,14 +98,12 @@ const Footer = () => {
               <li>24/7 Emergency Service</li>
             </ul>
             <div className="pt-4">
-              <a
-                href="https://wa.me/2348063840230"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-md font-medium hover:bg-accent/90 transition-colors"
               >
-                💬 WhatsApp Support
-              </a>
+                💬 Contact Support
+              </Link>
             </div>
           </div>
         </div>
@@ -116,15 +115,15 @@ const Footer = () => {
             © {new Date().getFullYear()} TIEM Energy. All rights reserved.
           </div>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-background/80 hover:text-accent transition-colors">
+            <Link to="/contact" className="text-background/80 hover:text-accent transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="text-background/80 hover:text-accent transition-colors">
+            </Link>
+            <Link to="/contact" className="text-background/80 hover:text-accent transition-colors">
               Terms of Service
-            </a>
-            <a href="#" className="text-background/80 hover:text-accent transition-colors">
+            </Link>
+            <Link to="/contact" className="text-background/80 hover:text-accent transition-colors">
               Warranty Terms
-            </a>
+            </Link>
           </div>
         </div>
 

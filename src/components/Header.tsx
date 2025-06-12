@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -40,6 +39,7 @@ const Header = () => {
     { name: 'Services', href: '/services' },
     { name: 'Products', href: '/products' },
     { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
     { name: 'Blog', href: '/blog' },
   ];
 
@@ -101,14 +101,12 @@ const Header = () => {
           {/* Right side actions */}
           <div className="flex items-center space-x-4">
             <div className="hidden xl:flex items-center">
-              <a
-                href="https://wa.link/k395rj"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/contact"
                 className="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors text-sm"
               >
                 Get Solar Quote
-              </a>
+              </Link>
             </div>
 
             {/* Mobile menu */}
@@ -150,14 +148,12 @@ const Header = () => {
                     </div>
                   ))}
                   <div className="pt-4 border-t">
-                    <a
-                      href="https://wa.link/k395rj"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to="/contact"
                       className="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors inline-block text-center w-full"
                     >
                       Get Solar Quote
-                    </a>
+                    </Link>
                     <div className="mt-4">
                       <p className="text-sm text-muted-foreground mb-2">Contact us:</p>
                       <a href="tel:+2348063840230" className="text-primary font-medium">
