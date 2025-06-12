@@ -7,17 +7,17 @@ const ClienteleCategoriesSection = () => {
     {
       title: 'Homeowners',
       description: 'Residential solar solutions for urban and rural homes',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop'
+      image: 'https://boylsenergy.com/wp-content/uploads/2024/06/solar-panels-2685357_1280.jpg'
     },
     {
       title: 'Businesses', 
       description: 'Commercial solar systems for SMEs and large enterprises',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2016/12/07/10/59/solar-panels-1889136_640.jpg'
     },
     {
       title: 'Institutions',
       description: 'Educational institutions and community organizations',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2020/10/04/19/05/solar-energy-5625889_640.jpg'
     }
   ];
 

@@ -8,19 +8,19 @@ const IntroToSolarSection = () => {
       icon: '☀️',
       title: 'Abundant Sunshine',
       description: 'Nigeria receives excellent solar radiation year-round',
-      image: 'https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=400&h=300&fit=crop' // Solar panels under bright sun
+      image: 'https://cdn.pixabay.com/photo/2017/01/14/12/59/solar-panel-1976848_640.jpg'
     },
     {
       icon: '💰',
       title: 'Cost Savings',
       description: 'Reduce electricity bills by up to 90%',
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop' // Money/savings concept
+      image: 'https://cdn.pixabay.com/photo/2016/11/18/15/20/man-1838439_640.jpg'
     },
     {
       icon: '🌱',
       title: 'Environmental Impact',
       description: 'Clean, renewable energy for a sustainable future',
-      image: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop' // Green environment/sustainability
+      image: 'https://cdn.pixabay.com/photo/2017/01/14/12/59/solar-panel-1976848_640.jpg'
     }
   ];
 

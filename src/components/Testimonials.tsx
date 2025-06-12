@@ -11,7 +11,7 @@ const Testimonials = () => {
       content: 'We installed a 20KW system for our textile customization factory. The quality of hardware and technical support from TIEM Energy is outstanding.',
       rating: 5,
       initials: 'SA',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+      image: 'https://cdn.pixabay.com/photo/2016/11/14/03/16/adult-1822586_640.jpg'
     },
     {
       name: 'Dr. Folake Adeyemi',
@@ -19,7 +19,7 @@ const Testimonials = () => {
       content: 'As a medical practitioner, reliable power is crucial for my practice. TIEM Energy provided a customized solution that meets all our medical equipment needs.',
       rating: 5,
       initials: 'FA',
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face'
+      image: 'https://cdn.pixabay.com/photo/2018/05/15/10/51/woman-3408758_640.jpg'
     },
     {
       name: 'Adebayo Ogundimu',
@@ -27,7 +27,7 @@ const Testimonials = () => {
       content: 'TIEM Energy installed a 5KW system for my shop. My electricity bills dropped by 80% and the system works perfectly even during harmattan season.',
       rating: 5,
       initials: 'AO',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+      image: 'https://cdn.pixabay.com/photo/2016/11/14/03/16/adult-1822586_640.jpg'
     },
     {
       name: 'Mrs. Chioma Okwu',
@@ -35,7 +35,7 @@ const Testimonials = () => {
       content: 'Excellent service from consultation to installation. The team was professional and the solar system has been running flawlessly for 8 months now.',
       rating: 5,
       initials: 'CO',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face'
+      image: 'https://cdn.pixabay.com/photo/2018/05/15/10/51/woman-3408758_640.jpg'
     }
   ];
 

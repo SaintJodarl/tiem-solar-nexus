@@ -29,7 +29,7 @@ const AboutUsSection = () => {
           
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop"
+              src="https://cdn.pixabay.com/photo/2017/11/03/15/24/solar-panel-2917547_640.jpg"
               alt="TIEM Energy team and solar installation in Nigeria"
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />

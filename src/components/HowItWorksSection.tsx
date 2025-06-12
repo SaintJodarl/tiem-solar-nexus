@@ -8,31 +8,31 @@ const HowItWorksSection = () => {
       number: '01',
       title: 'Consultation',
       description: 'Free consultation to understand your energy needs and budget',
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2019/07/05/13/42/engineer-4310678_640.jpg'
     },
     {
       number: '02',
       title: 'Site Survey',
       description: 'Professional site assessment and solar potential evaluation',
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=300&h=200&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2018/05/04/09/40/solar-3371722_640.jpg'
     },
     {
       number: '03',
       title: 'Proposal',
       description: 'Customized system design and transparent pricing proposal',
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2015/05/29/13/46/solar-panels-789258_640.jpg'
     },
     {
       number: '04',
       title: 'Installation',
       description: 'Professional installation by certified technicians',
-      image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300&h=200&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2019/05/29/19/09/solar-panel-4234097_640.jpg'
     },
     {
       number: '05',
       title: 'Maintenance & Support',
       description: 'Ongoing maintenance and 24/7 customer support',
-      image: 'https://images.unsplash.com/photo-1559302504-64aae6ca6834?w=300&h=200&fit=crop'
+      image: 'https://cdn.pixabay.com/photo/2020/03/02/15/55/engineer-4890795_640.jpg'
     }
   ];
 
