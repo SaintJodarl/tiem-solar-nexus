@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -101,8 +100,8 @@ const Contact = () => {
     <div className="min-h-screen">
       <Header />
       
-      {/* Hero Contact Section */}
-      <section className="min-h-screen" style={{ background: 'linear-gradient(135deg, #8BC34A 0%, #689F38 100%)' }}>
+      {/* Hero Contact Section with TIEM Energy Colors */}
+      <section className="min-h-screen" style={{ background: 'linear-gradient(135deg, #d20500 0%, #ffd901 100%)' }}>
         <div className="container-fluid h-100">
           <div className="row h-100 align-items-center">
             {/* Left Side - Hero Content */}
@@ -136,7 +135,7 @@ const Contact = () => {
                 <div className="col-md-6 mb-3">
                   <div className="d-flex align-items-center mb-2">
                     <div className="bg-white rounded-circle p-2 me-3">
-                      <span className="text-success">📞</span>
+                      <span style={{ color: '#d20500' }}>📞</span>
                     </div>
                     <div>
                       <div className="fw-bold">+2348063840230</div>
@@ -147,7 +146,7 @@ const Contact = () => {
                 <div className="col-md-6 mb-3">
                   <div className="d-flex align-items-center">
                     <div className="bg-white rounded-circle p-2 me-3">
-                      <span className="text-success">✉️</span>
+                      <span style={{ color: '#d20500' }}>✉️</span>
                     </div>
                     <div>
                       <div>info@tiemenergy.com</div>
@@ -181,7 +180,7 @@ const Contact = () => {
             {/* Right Side - Compact Quote Form */}
             <div className="col-lg-6 p-4">
               <div className="bg-white rounded-4 shadow-lg p-4">
-                <h2 className="text-center mb-4 fw-bold text-dark">Request A Quote</h2>
+                <h2 className="text-center mb-4 fw-bold" style={{ color: '#d20500' }}>Request A Quote</h2>
                 
                 <form onSubmit={handleSubmit} className="needs-validation" noValidate>
                   {/* Top Row - Installation Details */}
@@ -194,13 +193,14 @@ const Contact = () => {
                           name="installFor"
                           value={formData.installFor}
                           onChange={handleInputChange}
+                          style={{ borderColor: '#d20500' }}
                         >
                           <option value="">Choose...</option>
                           <option value="local-contractor">Local contractor</option>
                           <option value="home">Home</option>
                           <option value="business">Business</option>
                         </select>
-                        <label htmlFor="installFor">Who will be install system?</label>
+                        <label htmlFor="installFor" style={{ color: '#d20500' }}>Who will be install system?</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -211,13 +211,14 @@ const Contact = () => {
                           name="timeframe"
                           value={formData.timeframe}
                           onChange={handleInputChange}
+                          style={{ borderColor: '#d20500' }}
                         >
                           <option value="">Choose...</option>
                           <option value="3-6-months">3-6 months</option>
                           <option value="immediately">Immediately</option>
                           <option value="this-month">This Month</option>
                         </select>
-                        <label htmlFor="timeframe">System completed by?</label>
+                        <label htmlFor="timeframe" style={{ color: '#d20500' }}>System completed by?</label>
                       </div>
                     </div>
                   </div>
@@ -234,8 +235,9 @@ const Contact = () => {
                           value={formData.powerConsumption}
                           onChange={handleInputChange}
                           placeholder="1254 kWh"
+                          style={{ borderColor: '#d20500' }}
                         />
-                        <label htmlFor="powerConsumption">Monthly electric usage in kWh?</label>
+                        <label htmlFor="powerConsumption" style={{ color: '#d20500' }}>Monthly electric usage in kWh?</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -246,13 +248,14 @@ const Contact = () => {
                           name="buildingType"
                           value={formData.buildingType}
                           onChange={handleInputChange}
+                          style={{ borderColor: '#d20500' }}
                         >
                           <option value="">Choose...</option>
                           <option value="off-grid">OffGrid</option>
                           <option value="on-grid">OnGrid</option>
                           <option value="hybrid">Hybrid</option>
                         </select>
-                        <label htmlFor="buildingType">Solar system type?</label>
+                        <label htmlFor="buildingType" style={{ color: '#d20500' }}>Solar system type?</label>
                       </div>
                     </div>
                   </div>
@@ -269,8 +272,9 @@ const Contact = () => {
                           value={formData.solarPlacement}
                           onChange={handleInputChange}
                           placeholder="Huge Farm"
+                          style={{ borderColor: '#d20500' }}
                         />
-                        <label htmlFor="solarPlacement">Solar panels place?</label>
+                        <label htmlFor="solarPlacement" style={{ color: '#d20500' }}>Solar panels place?</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -283,8 +287,9 @@ const Contact = () => {
                           value={formData.roofMaterial}
                           onChange={handleInputChange}
                           placeholder="Comp shingle"
+                          style={{ borderColor: '#d20500' }}
                         />
-                        <label htmlFor="roofMaterial">Materials on your roof?</label>
+                        <label htmlFor="roofMaterial" style={{ color: '#d20500' }}>Materials on your roof?</label>
                       </div>
                     </div>
                   </div>
@@ -302,8 +307,9 @@ const Contact = () => {
                           onChange={handleInputChange}
                           placeholder="Enter Mail Address"
                           required
+                          style={{ borderColor: '#d20500' }}
                         />
-                        <label htmlFor="email">Your Email Address</label>
+                        <label htmlFor="email" style={{ color: '#d20500' }}>Your Email Address</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -317,15 +323,16 @@ const Contact = () => {
                           onChange={handleInputChange}
                           placeholder="Enter Phone Number"
                           required
+                          style={{ borderColor: '#d20500' }}
                         />
-                        <label htmlFor="phone">Your Phone Number</label>
+                        <label htmlFor="phone" style={{ color: '#d20500' }}>Your Phone Number</label>
                       </div>
                     </div>
                   </div>
 
                   {/* Contact Method Checkboxes */}
                   <div className="mb-4">
-                    <label className="form-label fw-bold">Preferred Contact Method</label>
+                    <label className="form-label fw-bold" style={{ color: '#d20500' }}>Preferred Contact Method</label>
                     <div className="d-flex gap-4">
                       <div className="form-check">
                         <input
@@ -335,6 +342,7 @@ const Contact = () => {
                           name="contactMethod"
                           value="all"
                           onChange={handleCheckboxChange}
+                          style={{ borderColor: '#d20500', backgroundColor: 'transparent' }}
                         />
                         <label className="form-check-label" htmlFor="contactAll">All</label>
                       </div>
@@ -346,6 +354,7 @@ const Contact = () => {
                           name="contactMethod"
                           value="email"
                           onChange={handleCheckboxChange}
+                          style={{ borderColor: '#d20500', backgroundColor: 'transparent' }}
                         />
                         <label className="form-check-label" htmlFor="contactEmail">Email</label>
                       </div>
@@ -357,6 +366,7 @@ const Contact = () => {
                           name="contactMethod"
                           value="phone"
                           onChange={handleCheckboxChange}
+                          style={{ borderColor: '#d20500', backgroundColor: 'transparent' }}
                         />
                         <label className="form-check-label" htmlFor="contactPhone">Phone</label>
                       </div>
@@ -368,15 +378,18 @@ const Contact = () => {
                     type="submit"
                     className="btn w-100 fw-bold py-3 text-white"
                     style={{ 
-                      backgroundColor: '#8BC34A',
+                      backgroundColor: '#ffd901',
                       border: 'none',
-                      transition: 'all 0.3s ease'
+                      transition: 'all 0.3s ease',
+                      color: '#000'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#689F38';
+                      e.currentTarget.style.backgroundColor = '#d20500';
+                      e.currentTarget.style.color = '#fff';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#8BC34A';
+                      e.currentTarget.style.backgroundColor = '#ffd901';
+                      e.currentTarget.style.color = '#000';
                     }}
                     disabled={isSubmitting}
                   >
