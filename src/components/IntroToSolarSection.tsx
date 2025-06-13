@@ -6,7 +6,7 @@ const IntroToSolarSection = () => {
   const benefits = [
     {
       icon: '☀️',
-      title: 'Abundant Sunshine',
+      title: 'Abundant Sunshines',
       description: 'Nigeria receives excellent solar radiation year-round',
       image: 'https://cdn.pixabay.com/photo/2017/01/14/12/59/solar-panel-1976848_640.jpg'
     },
