@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -21,6 +22,7 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      id: 1,
       title: 'The Evolution of Solar Panel Technology: From Humble Beginnings to High Efficiency',
       teaser: 'Explore the fascinating journey of solar panel development from early photovoltaic cells to today\'s high-efficiency modules.',
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
@@ -30,6 +32,7 @@ const Blog = () => {
       cta: 'Ready to upgrade to high-efficiency solar panels? Contact us today for a free consultation!'
     },
     {
+      id: 2,
       title: 'What Does a Solar Energy Consultant Really Do? (And Why You Might Need One)',
       teaser: 'Discover the role of solar consultants and how they can help you make the best decisions for your solar investment.',
       image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
@@ -39,6 +42,7 @@ const Blog = () => {
       cta: 'Need expert solar consultation? Let\'s help you go solar the smart way!'
     },
     {
+      id: 3,
       title: 'The Ultimate Guide to Residential Solar Power in Nigeria (2025 Edition)',
       teaser: 'Complete guide covering everything you need to know about residential solar systems in Nigeria\'s unique environment.',
       image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=400&h=300&fit=crop',
@@ -48,6 +52,7 @@ const Blog = () => {
       cta: 'Ready to start your solar journey in Nigeria? Contact us today for a free consultation!'
     },
     {
+      id: 4,
       title: 'How to Make Your Home More Energy Efficient Before Going Solar',
       teaser: 'Learn practical steps to reduce your energy consumption before installing solar panels for maximum efficiency.',
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
@@ -57,6 +62,7 @@ const Blog = () => {
       cta: 'Want to optimize your home before going solar? Let\'s help you go solar the smart way!'
     },
     {
+      id: 5,
       title: '15 Powerful Benefits of Installing Solar Panels at Home',
       teaser: 'Comprehensive list of advantages that make solar panels a smart investment for Nigerian homeowners.',
       image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=300&fit=crop',
@@ -66,6 +72,7 @@ const Blog = () => {
       cta: 'Ready to enjoy these solar benefits? Contact us today for a free consultation!'
     },
     {
+      id: 6,
       title: 'Avoid These 7 Common Mistakes When Choosing a Solar Installer in Nigeria',
       teaser: 'Critical mistakes to avoid when selecting a solar installation company to ensure quality and value.',
       image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop',
@@ -75,6 +82,7 @@ const Blog = () => {
       cta: 'Choose the right installer from the start. Contact us today for a free consultation!'
     },
     {
+      id: 7,
       title: 'The Truth About Rooftop Solar Panels: Are They Safe for Your Home?',
       teaser: 'Address common safety concerns and myths about rooftop solar panel installations.',
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
@@ -84,6 +92,7 @@ const Blog = () => {
       cta: 'Concerned about solar safety? Let\'s help you go solar the smart way with proper installation!'
     },
     {
+      id: 8,
       title: 'How to Finance Your Solar System in Nigeria Without Breaking the Bank',
       teaser: 'Explore financing options and payment plans that make solar energy accessible for Nigerian families.',
       image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop',
@@ -93,6 +102,7 @@ const Blog = () => {
       cta: 'Explore flexible financing options. Contact us today for a free consultation!'
     },
     {
+      id: 9,
       title: 'Understanding Net Metering and Energy Storage in Nigeria',
       teaser: 'Learn about net metering policies and battery storage solutions for optimal energy management.',
       image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop',
@@ -102,6 +112,7 @@ const Blog = () => {
       cta: 'Want to maximize your solar investment with storage? Contact us today for a free consultation!'
     },
     {
+      id: 10,
       title: 'Solar for Small Businesses: A Smart Investment in Unstable Grid Regions',
       teaser: 'How small businesses can benefit from solar energy in areas with unreliable electricity supply.',
       image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=400&h=300&fit=crop',
@@ -111,6 +122,7 @@ const Blog = () => {
       cta: 'Ready to power your business with solar? Let\'s help you go solar the smart way!'
     },
     {
+      id: 11,
       title: 'From Grid-Tied to Off-Grid: Which Solar System Is Best for You?',
       teaser: 'Compare different solar system types to determine the best solution for your specific needs.',
       image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop',
@@ -120,6 +132,7 @@ const Blog = () => {
       cta: 'Not sure which system is right for you? Contact us today for a free consultation!'
     },
     {
+      id: 12,
       title: 'How Solar Energy Helps Fight Climate Change & Build a Sustainable Future',
       teaser: 'Explore the environmental benefits of solar energy and its role in creating a sustainable future.',
       image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=300&fit=crop',
@@ -201,7 +214,6 @@ const Blog = () => {
                 </div>
 
                 <CardHeader className="flex-grow">
-                  <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
                   <CardTitle className="text-xl font-bold text-foreground line-clamp-2 mb-3">
                     {post.title}
                   </CardTitle>
@@ -226,8 +238,8 @@ const Blog = () => {
 
                 <CardContent className="pt-0">
                   <div className="flex gap-2">
-                    <Button className="flex-1" variant="outline" size="sm">
-                      Read More
+                    <Button className="flex-1" variant="outline" size="sm" asChild>
+                      <Link to={`/blog/${post.id}`}>Read More</Link>
                     </Button>
                     <Button className="flex-1" size="sm" asChild>
                       <a href="/contact">Get Quote</a>
@@ -238,7 +250,6 @@ const Blog = () => {
             ))}
           </div>
 
-          {/* Back to All Posts */}
           {selectedCategory !== 'All' && (
             <div className="text-center mt-12">
               <Button 
