@@ -26,7 +26,7 @@ const USPSection = () => {
       icon: '🇳🇬',
       title: 'Local Expertise',
       description: 'Deep understanding of Nigerian climate and energy requirements',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837754/ovinuchi-ejiohuo-Qe9S79-5iD0-unsplash_nmdzmz.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749935710/ClimatePic.jpg'
     },
     {
       icon: '🛡️',
