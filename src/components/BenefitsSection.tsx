@@ -7,17 +7,17 @@ const BenefitsSection = () => {
     {
       title: 'Optimized for Nigerian Climate',
       description: 'Our solar solutions are engineered to withstand Nigeria\'s unique weather patterns, ensuring maximum efficiency year-round.',
-      image: 'https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=300&h=200&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838880/ovinuchi-ejiohuo-Qe9S79-5iD0-unsplash_ntnmzy.jpg'
     },
     {
       title: 'Cutting-Edge Technology Integration',
       description: 'We utilize the latest solar inverter technologies and smart energy management systems for optimal power output and monitoring.',
-      image: 'https://images.unsplash.com/photo-1559302504-64aae6ca6834?w=300&h=200&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749850998/Cutting_Edgee_abnu35.jpg'
     },
     {
       title: 'End-to-End Project Management',
       description: 'From initial consultation to final installation and ongoing maintenance, we manage every step seamlessly to ensure your satisfaction.',
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=300&h=200&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749851173/project_management_black-people-arproject-management-site-african-_stfvzx.webp'
     }
   ];
 
@@ -26,10 +26,10 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Benefits of Patronizing TIEM Energy
+            Why Nigerians Trust TIEM Energy
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover why hundreds of Nigerian homes and businesses choose TIEM Energy for their solar power needs
+            Join the growing number of homes and businesses across Nigeria choosing TIEM Energy for reliable, cost-saving, and expertly delivered solar solutions. Experience the confidence of partnering with a brand that prioritizes performance, durability, and your long-term energy freedom.
           </p>
         </div>
 

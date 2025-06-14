@@ -12,7 +12,7 @@ const Services = () => {
     {
       title: 'Consultation',
       description: 'Free solar energy needs assessment',
-      price: 'Free',
+      price: 'FREE',
       features: [
         'Site evaluation',
         'Energy consumption analysis',
@@ -24,7 +24,7 @@ const Services = () => {
     {
       title: 'Installation',
       description: 'Professional solar system installation',
-      price: 'From ₦500,000',
+      price: 'Included in Package',
       features: [
         'Expert installation team',
         'Quality components',
@@ -36,7 +36,7 @@ const Services = () => {
     {
       title: 'Maintenance',
       description: 'Ongoing system maintenance and support',
-      price: 'From ₦50,000/year',
+      price: 'Unique to Project Scope',
       features: [
         'Regular system checks',
         'Performance monitoring',
@@ -139,7 +139,7 @@ const Services = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               OUR BENEFITS<br />
-              <span className="text-2xl font-normal">— Why Choose TIEM ENERGY</span>
+              <span className="text-2xl font-normal">Why Choose TIEM ENERGY</span>
             </h2>
           </div>
 

@@ -9,37 +9,37 @@ const USPSection = () => {
       icon: '🎓',
       title: 'Certified Engineers',
       description: 'Licensed professionals with proven track record in solar installations',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838823/emmanuel-ikwuegbu-zWOgsj3j0wA-unsplash_cwr8kl.jpg'
     },
     {
       icon: '⚡',
       title: 'Quality Equipment',
       description: 'Premium solar panels and components from trusted global manufacturers',
-      image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749843663/681b308dbc6a3710aa5c1132_pasted-image-0--20--compressed_dstehl.jpg'
     },
     {
       icon: '💰',
       title: 'Affordable Pricing',
       description: 'Competitive rates with flexible payment plans for all budgets',
-      image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837751/allison-saeng-HrFCxo0Go5Y-unsplash_yiv4sp.jpg'
     },
     {
       icon: '🇳🇬',
       title: 'Local Expertise',
       description: 'Deep understanding of Nigerian climate and energy requirements',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837748/2148894014_eg1aqf.jpg'
     },
     {
       icon: '🛡️',
       title: 'Comprehensive Warranty',
       description: '25-year panel warranty and 5-year installation guarantee',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837748/award_ribbon_check_mark_with_stars_gradient_style_lfcbmf.jpg'
     },
     {
       icon: '📞',
       title: '24/7 Support',
       description: 'Round-the-clock technical support and maintenance services',
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837750/247-hours-open-helpline-yellow-template-design_1017-54495_e6idgj.jpg'
     }
   ];
 

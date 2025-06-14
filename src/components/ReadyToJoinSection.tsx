@@ -11,7 +11,7 @@ const ReadyToJoinSection = () => {
             Ready to Join Our Growing Family of Satisfied Customers?
           </h2>
           <p className="text-muted-foreground mb-8">
-            Explore your next step today.
+            Take the first step toward reliable, affordable solar energy today!.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

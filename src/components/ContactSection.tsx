@@ -44,10 +44,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Get In Touch
+            Connect With Us
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your solar journey? Contact our experts for a free consultation and customized quote
+            Speak with our solar experts today for a FREE consultation and a tailored quote designed to meet your energy needs.
           </p>
         </div>
 
@@ -185,7 +185,7 @@ const ContactSection = () => {
               <CardContent className="p-6">
                 <div className="mb-4">
                   <img
-                    src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=200&fit=crop"
+                    src="https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749839392/american-public-power-association-fm5_vCUa-Bc-unsplash_dxqbjl.jpg"
                     alt="Customer service representative"
                     className="w-full h-32 object-cover rounded-lg mb-4"
                   />

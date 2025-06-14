@@ -67,24 +67,33 @@ const About = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
+              <div className="bg-muted rounded-lg h-72 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl mb-2">⚡</div>
-                  <p className="text-muted-foreground">[Installation Team Photo]</p>
+                  <img
+                    src='https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749897589/Solarroof_2_jw2vg8.jpg'
+                    alt='Expeert Team Installation'
+                    className="w-full h-48 mx-auto rounded-lg object-cover mb-4"
+                  />
                   <p className="text-sm text-muted-foreground">Solar Panel Installation</p>
                 </div>
               </div>
-              <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
+              <div className="bg-muted rounded-lg h-72 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl mb-2">🔋</div>
-                  <p className="text-muted-foreground">[Battery Setup Photo]</p>
+                 <img
+                    src='https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749897736/Batter_2_vzlmnd.jpg'
+                    alt='Expeert Team Installation'
+                    className="w-full h-48 mx-auto rounded-lg object-cover mb-4"
+                  />
                   <p className="text-sm text-muted-foreground">Battery System Setup</p>
                 </div>
               </div>
-              <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
+              <div className="bg-muted rounded-lg h-72 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl mb-2">🏠</div>
-                  <p className="text-muted-foreground">[Residential Installation]</p>
+                 <img
+                    src='https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749897912/WhatsApp_Image_2025-06-04_at_9.13.11_AM_aalgwq.jpg'
+                    alt='Expeert Team Installation'
+                    className="w-full h-48 mx-auto rounded-lg object-cover mb-4"
+                  />
                   <p className="text-sm text-muted-foreground">Complete Home Solutions</p>
                 </div>
               </div>
@@ -209,7 +218,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-4">Strategic Business Overview</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4">The Strategy Behind Our Success</h2>
               <div className="h-1 w-24 bg-primary mx-auto"></div>
             </div>
             

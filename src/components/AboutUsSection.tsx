@@ -18,21 +18,22 @@ const AboutUsSection = () => {
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Our team of certified engineers and technicians ensures every installation meets the highest standards of quality and performance, backed by comprehensive warranties and ongoing support.
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90"
               asChild
             >
               <a href="/about">Learn More About Us</a>
             </Button>
           </div>
-          
+
           <div className="relative">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/11/03/15/24/solar-panel-2917547_640.jpg"
+              <img
+              src="https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749835374/watt-a-lot-4Wl2YkDqHjU-unsplash_1_ltnmb8.jpg"
               alt="TIEM Energy team and solar installation in Nigeria"
-              className="w-full h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-80 object-cover rounded-lg shadow-lg "
             />
+
             <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>
           </div>
         </div>

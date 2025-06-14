@@ -20,7 +20,7 @@ const SolarInvestmentSection = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Go solar with TIEM Energy. Our energy solutions deliver reliable power for years to come.
+            Choose TIEM Energy for reliable solar solutions that deliver lasting value. Our systems are designed for durability, high efficiency, and long-term energy independence—helping you save more, reduce stress, and enjoy a better standard of living for you and your family.
           </p>
 
           <Button 

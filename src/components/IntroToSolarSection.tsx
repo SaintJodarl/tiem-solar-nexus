@@ -6,21 +6,21 @@ const IntroToSolarSection = () => {
   const benefits = [
     {
       icon: '☀️',
-      title: 'Abundant Sunshines',
+      title: 'Abundant Sunshine',
       description: 'Nigeria receives excellent solar radiation year-round',
-      image: 'https://cdn.pixabay.com/photo/2017/01/14/12/59/solar-panel-1976848_640.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838888/subhomoy-chatterjee-giw7D9_Jh_4-unsplash_ogng52.jpg'
     },
     {
       icon: '💰',
       title: 'Cost Savings',
       description: 'Reduce electricity bills by up to 90%',
-      image: 'https://cdn.pixabay.com/photo/2016/11/18/15/20/man-1838439_640.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/istockphoto-1365317443-612x612_mupzah.png'
     },
     {
       icon: '🌱',
       title: 'Environmental Impact',
       description: 'Clean, renewable energy for a sustainable future',
-      image: 'https://cdn.pixabay.com/photo/2017/01/14/12/59/solar-panel-1976848_640.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837767/markus-winkler-K-ES96_f-Ck-unsplash_losab9.jpg'
     }
   ];
 

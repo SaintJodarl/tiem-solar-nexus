@@ -88,14 +88,15 @@ const Contact = () => {
     }, 1000);
   };
 
-  const benefits = [
-    'Reliability & Performance',
-    '50% More Energy Output', 
-    'Solar Material Financing',
-    'Built Using N-type Mono',
-    'In-Time Manufacturing',
-    '24/7 Customer Support'
-  ];
+ const benefits = [
+  'Uninterrupted Power Supply',
+  'Up to 70% Energy Savings',
+  'Flexible Financing Options',
+  'High-Efficiency Panels',
+  'Fast & Professional Installation',
+  'Continuous Support & Maintenance'
+];
+
 
   return (
     <div className="min-h-screen">
@@ -107,16 +108,19 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-screen items-center">
             {/* Left Side - Hero Content */}
             <div className="text-white space-y-6">
-              <div className="mb-3">
-                <small className="text-uppercase font-bold opacity-75">Improving The Performance Of Solar Energy.</small>
-              </div>
               
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
-                Discover Independence Through Using The Power Of Solar Panels!
+                Unlock Energy Freedom with Reliable Solar Power Solutions!
               </h1>
               
               <p className="text-lg lg:text-xl mb-6">
-                We offer products, solutions, and services across the entire energy value chain. We support our customers with affordable energy systems. Learn more by contact us
+                <p>Tired of blackouts, rising energy costs, and unstable electricity? With a complete Solar Power System—Panel, Inverter & Battery—you take full control of your energy supply. Enjoy lower monthly bills and the confidence that comes with clean, reliable, and renewable power—right from your rooftop.</p>
+
+<p>At TIEM Energy, we deliver innovative products, tailored solutions, and expert services across the entire energy value chain—making solar both affordable and accessible.</p>
+
+<p>Ready to break free from power challenges?</p>
+<p>Fill out the form to get started on your journey to energy independence.</p>
+
               </p>
               
               {/* Feature List */}
@@ -169,10 +173,10 @@ const Contact = () => {
                         onChange={handleInputChange}
                         style={{ borderColor: '#d20500' }}
                       >
-                        <option value="">Who will install system?</option>
-                        <option value="local-contractor">Local contractor</option>
-                        <option value="home">Home</option>
-                        <option value="business">Business</option>
+                        <option value="">Where do You want to install the Solar System?</option>
+                        <option value="Home">Home</option>
+                        <option value="Business">Business</option>
+                        <option value="Off-Grid">Shop, Factory, Rural Area, Project Site</option>
                       </select>
                     </div>
                     <div>
@@ -184,10 +188,11 @@ const Contact = () => {
                         onChange={handleInputChange}
                         style={{ borderColor: '#d20500' }}
                       >
-                        <option value="">System completed by?</option>
-                        <option value="3-6-months">3-6 months</option>
+                        <option value="">How Soon Do You Want to Install? </option>
                         <option value="immediately">Immediately</option>
                         <option value="this-month">This Month</option>
+                        <option value="1-3-months">1-3 months</option>
+                        <option value="i-just-need-information">I Just Need Information</option>
                       </select>
                     </div>
                   </div>
@@ -215,10 +220,10 @@ const Contact = () => {
                         onChange={handleInputChange}
                         style={{ borderColor: '#d20500' }}
                       >
-                        <option value="">Solar system type?</option>
-                        <option value="off-grid">OffGrid</option>
-                        <option value="on-grid">OnGrid</option>
-                        <option value="hybrid">Hybrid</option>
+                        <option value="">Preferred Solar System Type?</option>
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="industrial">Industrial</option>
                       </select>
                     </div>
                   </div>
@@ -349,7 +354,7 @@ const Contact = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="aspect-w-16 aspect-h-9">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4!2d3.3!3d6.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzYnMDAuMCJOIDPCsDEwJzQ4LjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4233121208436!2d3.3205566!3d6.594454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d94a47a52b7%3A0x42521bc1293780e2!2s10%20Toyin%20Crescent%2C%20Iju%20Ishaga%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1718386780000!5m2!1sen!2sng"
                   width="100%" 
                   height="400" 
                   style={{ border: 0 }}

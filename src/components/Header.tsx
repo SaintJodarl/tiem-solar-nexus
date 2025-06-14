@@ -27,32 +27,28 @@ const Header = () => {
   }, []);
 
   const navigationItems = [
-    { name: 'Home', href: '/' },
-    { 
-      name: 'About Us', 
-      href: '/about',
-      submenu: [
-        { name: 'About Us', href: '/about' },
-        { name: 'The TIEM Experience', href: '/experience' }
-      ]
+    { name: 'HOME', href: '/' },
+    {
+      name: 'ABOUT US',
+      href: '/About',
     },
-    { name: 'Services', href: '/services' },
-    { name: 'Products', href: '/products' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'SERVICES', href: '/services' },
+    { name: 'PRODUCTS', href: '/products' },
+    { name: 'PROJECTS', href: '/projects' },
+    { name: 'CONTACT', href: '/contact' },
+    { name: 'BLOG', href: '/blog' },
   ];
 
   return (
-    <header className={`sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-all duration-300 ${isScrolled ? 'bg-accent' : 'bg-background/95'}`}>
+    <header className={`h-20 sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-all duration-300 ${isScrolled ? 'bg-accent' : 'bg-background/95'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/ba0ed9d0-e60e-4e7d-a66d-acfa48de53c8.png" 
-                alt="TIEM Energy Logo" 
+              <img
+                src="/lovable-uploads/ba0ed9d0-e60e-4e7d-a66d-acfa48de53c8.png"
+                alt="TIEM Energy Logo"
                 className="h-12 w-auto"
               />
             </Link>
@@ -62,38 +58,46 @@ const Header = () => {
           <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList className="space-x-6">
               {navigationItems.map((item) => (
-                <NavigationMenuItem key={item.name}>
-                  {item.submenu ? (
-                    <>
-                      <NavigationMenuTrigger className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm bg-transparent">
-                        {item.name}
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <div className="w-48 p-2">
-                          {item.submenu.map((subItem) => (
-                            <NavigationMenuLink key={subItem.name} asChild>
-                              <Link
-                                to={subItem.href}
-                                className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                              >
-                                {subItem.name}
-                              </Link>
-                            </NavigationMenuLink>
-                          ))}
-                        </div>
-                      </NavigationMenuContent>
-                    </>
-                  ) : (
-                    <NavigationMenuLink asChild>
-                      <Link
-                        to={item.href}
-                        className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
-                      >
-                        {item.name}
-                      </Link>
-                    </NavigationMenuLink>
-                  )}
-                </NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to={item.href}
+                    className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-lg"
+                  >
+                    {item.name}
+                  </Link>
+                </NavigationMenuLink>
+                // <NavigationMenuItem key={item.name}>
+                //   {item.submenu ? (
+                //     <>
+                //       <NavigationMenuTrigger className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm bg-transparent">
+                //         {item.name}
+                //       </NavigationMenuTrigger>
+                //       <NavigationMenuContent>
+                //         <div className="w-48 p-2">
+                //           {item.submenu.map((subItem) => (
+                //             <NavigationMenuLink key={subItem.name} asChild>
+                //               <Link
+                //                 to={subItem.href}
+                //                 className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                //               >
+                //                 {subItem.name}
+                //               </Link>
+                //             </NavigationMenuLink>
+                //           ))}
+                //         </div>
+                //       </NavigationMenuContent>
+                //     </>
+                //   ) : (
+                //     <NavigationMenuLink asChild>
+                //       <Link
+                //         to={item.href}
+                //         className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+                //       >
+                //         {item.name}
+                //       </Link>
+                //     </NavigationMenuLink>
+                //   )}
+                // </NavigationMenuItem>
               ))}
             </NavigationMenuList>
           </NavigationMenu>
@@ -131,7 +135,7 @@ const Header = () => {
                       >
                         {item.name}
                       </Link>
-                      {item.submenu && (
+                      {/* {item.submenu && (
                         <div className="ml-4 mt-2 space-y-2">
                           {item.submenu.map((subItem) => (
                             <Link
@@ -144,7 +148,7 @@ const Header = () => {
                             </Link>
                           ))}
                         </div>
-                      )}
+                      )} */}
                     </div>
                   ))}
                   <div className="pt-4 border-t">

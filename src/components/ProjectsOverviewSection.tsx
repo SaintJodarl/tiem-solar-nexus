@@ -6,27 +6,27 @@ const ProjectsOverviewSection = () => {
   const projects = [
     {
       title: "2.5kVA Solar Install",
-      location: "Lagos",
+      location: "Ogba, Lagos",
       description: "Residential solar system for 3-bedroom home",
-      image: "https://cdn.pixabay.com/photo/2015/05/29/13/46/solar-panels-789258_640.jpg"
+      image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841681/2..5KVA_nouewt.jpg"
     },
     {
       title: "5kVA Commercial Setup",
-      location: "Abuja",
+      location: "Agege, Lagos",
       description: "Business solar solution for retail store",
-      image: "https://cdn.pixabay.com/photo/2019/05/29/19/09/solar-panel-4234097_640.jpg"
+      image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841849/5KVA_wownjw.jpg"
     },
     {
       title: "10kVA Enterprise System",
-      location: "Port Harcourt", 
+      location: "Yaba, Lagos", 
       description: "Large-scale solar installation for office complex",
-      image: "https://cdn.pixabay.com/photo/2015/05/29/13/46/solar-panels-789258_640.jpg"
+      image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841915/10KVA_pswc4r.jpg"
     },
     {
-      title: "3kVA Home Solution",
+      title: "3.5kVA Home Solution",
       location: "Ibadan",
       description: "Complete solar package for family residence",
-      image: "https://cdn.pixabay.com/photo/2019/05/29/19/09/solar-panel-4234097_640.jpg"
+      image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841679/3.5KVA_jxaatm.jpg"
     }
   ];
 

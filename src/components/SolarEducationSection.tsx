@@ -11,24 +11,24 @@ import {
 const SolarEducationSection = () => {
   const faqs = [
     {
-      question: 'How much can I save with solar energy?',
-      answer: 'Most customers save 70-90% on their electricity bills. The exact savings depend on your current energy consumption, system size, and local electricity rates. Our free consultation will provide you with a personalized savings estimate.'
+      question: 'Is solar power reliable in Nigeria with our weather conditions?',
+      answer: 'Yes. Nigeria’s climate is ideal for solar power. With over 300 days of strong sunlight each year, you’re tapping into a constant, natural power source. Our panels are designed for hot climates like ours—they’re efficient, resilient to heat, and still generate energy on cloudy days. Plus, the system stores unused power in batteries so you’re never left in the dark. It’s a smart, long-term solution to unreliable electricity.'
     },
     {
-      question: 'How long do solar panels last?',
-      answer: 'Quality solar panels typically last 25-30 years or more. Our panels come with a 25-year warranty and are designed to withstand Nigeria\'s climate conditions including harmattan, rain, and high temperatures.'
+      question: 'Will solar power run my appliances like ACs, fridges, and freezers?',
+      answer: 'Yes, we carefully assess your energy requirements and install systems capable of powering everything from lighting and fans to heavy-duty appliances like, freezers, refrigerators, ACs, and water pumps. We match the system capacity to your actual usage for reliable performance.'
     },
     {
-      question: 'What happens during power outages?',
-      answer: 'With our battery backup systems, you\'ll continue to have power even during grid outages. The size of your battery bank determines how long you can run on stored solar energy during outages.'
+      question: ' Isn’t solar installation expensive upfront?',
+      answer: 'Our packages are designed to be budget-friendly and deliver long-term savings. Once installed, your system helps you cut down drastically on fuel and electricity bills, paying for itself over time. We also offer flexible system sizes to fit your budget and power needs.'
     },
     {
-      question: 'Is solar suitable for Nigeria\'s climate?',
-      answer: 'Absolutely! Nigeria receives excellent solar radiation year-round, making it ideal for solar energy. Our systems are specifically designed to perform optimally in tropical climates with high temperatures and humidity.'
+      question: 'What if something goes wrong after installation, Who handles maintenance?',
+      answer: 'We offer full end-to-end support—including installation, system monitoring, and ongoing maintenance. Every system is backed by a comprehensive warranty, and our local technicians are available for on-site support when needed. Youu are not just buying a product,you are gaining a long-term energy partner.'
     },
     {
-      question: 'What maintenance is required?',
-      answer: 'Solar systems require minimal maintenance. Regular cleaning of panels and periodic system checks are usually sufficient. We provide comprehensive maintenance packages to keep your system running at peak performance.'
+      question: 'I live in a rented apartment or plan to relocate. Is solar still for me?',
+      answer: 'Definitely. We offer compact and portable solar solutions that can be uninstalled and moved to a new location with ease. Whether you’re renting or relocating, your solar investment remains useful and transferable.'
     }
   ];
 

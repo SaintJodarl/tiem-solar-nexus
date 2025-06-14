@@ -8,25 +8,25 @@ const ProductCategories = () => {
     {
       title: 'Solar Panels',
       description: 'High-efficiency solar panels for maximum energy generation',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749839391/chelsea-WvusC5M-TM8-unsplash_uiedjc.jpg',
       products: '50+ Models',
     },
     {
       title: 'Solar Inverters',
       description: 'Reliable inverters for seamless power conversion',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841527/main-image-635149b0591ba_qwlj7j.jpg',
       products: '30+ Models',
     },
     {
       title: 'Batteries',
       description: 'Long-lasting energy storage solutions',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841061/BATTERY_m080nz.jpg',
       products: '25+ Models',
     },
     {
       title: 'All-in-One Systems',
       description: 'Complete solar power solutions ready to install',
-      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841342/Home-Energy-Storage-System-All-in-One-Stacked-Hybrid-Inverter-51-2V-Li-ion-Battery-System_ewkpzv.avif',
       products: '15+ Systems',
     },
   ];
