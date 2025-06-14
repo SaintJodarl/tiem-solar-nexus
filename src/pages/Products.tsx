@@ -1,67 +1,81 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import ContactSection from '@/components/ContactSection';
+
 const Products = () => {
   const products = [{
     name: '1kVA Solar Inverter',
     price: '₦750,000',
     description: 'Perfect for small homes and apartments with basic power needs.',
-    features: ['Basic lighting', 'Phone charging', 'Small appliances']
+    features: ['Basic lighting', 'Phone charging', 'Small appliances'],
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749844370/Growatt_5_ztwzea.webp'
   }, {
     name: '2.5kVA Solar System',
     price: '₦1,650,000',
     description: 'Ideal for medium-sized homes with moderate power consumption.',
-    features: ['LED TV', 'Refrigerator', 'Fans', 'Lighting', 'Phone charging']
+    features: ['LED TV', 'Refrigerator', 'Fans', 'Lighting', 'Phone charging'],
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749845097/Complete-Solar-System-3kw-off-Grid-Solar-Energy-System_q7vb24.avif'
   }, {
     name: 'Emerald Package - 3.5kVA',
     price: '₦3,441,750.00',
     description: '3KVA with 2 batteries - Complete home solution',
     features: ['6 Solar Panels (480W)', 'Energy-saving fridge', 'TV & Sound System', 'Fans & Decoders', 'Lights & Charging Points'],
-    highlight: true
+    highlight: true,
+    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop'
   }, {
     name: '5kVA Solar System',
     price: 'Contact for Price',
     description: 'Perfect for larger homes and small businesses.',
-    features: ['Multiple appliances', 'AC units', 'Business equipment']
+    features: ['Multiple appliances', 'AC units', 'Business equipment'],
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop'
   }, {
     name: '10kVA Solar System',
     price: '₦8,500,000',
     description: 'Commercial-grade system for businesses and large homes.',
-    features: ['Industrial equipment', 'Multiple AC units', 'Commercial appliances']
+    features: ['Industrial equipment', 'Multiple AC units', 'Commercial appliances'],
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop'
   }, {
     name: '15kVA Solar System',
     price: 'Contact for Price',
     description: 'Heavy-duty commercial and industrial applications.',
-    features: ['Factory equipment', 'Large commercial spaces', 'Industrial machinery']
+    features: ['Factory equipment', 'Large commercial spaces', 'Industrial machinery'],
+    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop'
   }, {
     name: '20kVA Solar System',
     price: 'Contact for Price',
     description: 'Large-scale commercial and industrial installations.',
-    features: ['Manufacturing facilities', 'Large offices', 'Industrial complexes']
+    features: ['Manufacturing facilities', 'Large offices', 'Industrial complexes'],
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop'
   }, {
     name: '30kVA Solar System',
     price: 'Contact for Price',
     description: 'Enterprise-level solar power solutions.',
-    features: ['Large manufacturing', 'Corporate facilities', 'Industrial estates']
+    features: ['Large manufacturing', 'Corporate facilities', 'Industrial estates'],
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop'
   }, {
     name: 'Installation & Maintenance',
     price: 'Contact for Price',
     description: 'Professional installation and ongoing maintenance services.',
-    features: ['Expert installation', 'Regular maintenance', 'Technical support']
+    features: ['Expert installation', 'Regular maintenance', 'Technical support'],
+    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop'
   }, {
     name: 'Energy Consultation',
     price: 'Contact for Price',
     description: 'Free consultation to determine your energy needs.',
-    features: ['Site assessment', 'Load calculation', 'System recommendation']
+    features: ['Site assessment', 'Load calculation', 'System recommendation'],
+    image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop'
   }, {
     name: 'Custom Industrial Solutions',
     price: 'Contact for Price',
     description: 'Tailored solar solutions for unique industrial requirements.',
-    features: ['Custom design', 'Scalable systems', 'Industrial-grade components']
+    features: ['Custom design', 'Scalable systems', 'Industrial-grade components'],
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop'
   }];
+
   return <div className="min-h-screen">
       <Header />
       
@@ -69,8 +83,7 @@ const Products = () => {
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Solar Products</h1>
-          <p className="text-xl max-w-3xl mx-auto">PremDiscover Premium Solar Solutions Built for Nigeria
-Explore our expertly crafted solar systems—designed to power your home or business reliably, efficiently, and continously and affordably.</p>
+          <p className="text-xl max-w-3xl mx-auto">Discover Premium Solar Solutions Built for Nigeria. Explore our expertly crafted solar systems—designed to power your home or business reliably, efficiently, and affordably.</p>
         </div>
       </section>
 
@@ -85,10 +98,12 @@ Explore our expertly crafted solar systems—designed to power your home or busi
                     </span>
                   </div>}
                 
-                <div className="relative overflow-hidden rounded-t-lg h-48 bg-muted flex items-center justify-center">
-                  <p className="text-muted-foreground text-center">
-                    [Product Image Placeholder]
-                  </p>
+                <div className="relative overflow-hidden rounded-t-lg h-48">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <CardHeader>
@@ -117,7 +132,7 @@ Explore our expertly crafted solar systems—designed to power your home or busi
                   
                   <div className="flex gap-2">
                     <Button className="flex-1" variant={product.highlight ? "default" : "outline"} asChild>
-                      <a href="https://wa.me/2348063840230" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.link/zbnkvi" target="_blank" rel="noopener noreferrer">
                         {product.highlight ? 'I WANT THIS PACKAGE' : 'Learn More'}
                       </a>
                     </Button>
@@ -160,4 +175,5 @@ Explore our expertly crafted solar systems—designed to power your home or busi
       <Footer />
     </div>;
 };
+
 export default Products;

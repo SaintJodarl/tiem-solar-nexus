@@ -8,87 +8,87 @@ import { Button } from '@/components/ui/button';
 const Blog = () => {
   const blogPosts = [
     {
-      title: 'Complete Guide to Solar Energy in Nigeria 2024',
-      teaser: 'Everything you need to know about solar power systems, costs, and benefits for Nigerian homes and businesses.',
+      title: 'The Evolution of Solar Panel Technology: From Humble Beginnings to High Efficiency',
+      teaser: 'Explore the fascinating journey of solar panel development from early photovoltaic cells to today\'s high-efficiency modules.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop',
       date: 'December 2024',
-      category: 'Solar Guide'
+      category: 'Technology'
     },
     {
-      title: 'How Much Does Solar Installation Cost in Nigeria?',
-      teaser: 'Breakdown of solar system costs, financing options, and return on investment for different system sizes.',
+      title: 'What Does a Solar Energy Consultant Really Do? (And Why You Might Need One)',
+      teaser: 'Discover the role of solar consultants and how they can help you make the best decisions for your solar investment.',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
-      date: 'November 2024',
-      category: 'Pricing'
+      date: 'December 2024',
+      category: 'Consultation'
     },
     {
-      title: 'Top 5 Benefits of Solar Energy for Nigerian Businesses',
-      teaser: 'Discover how solar power can reduce operational costs and improve business efficiency in Nigeria.',
+      title: 'The Ultimate Guide to Residential Solar Power in Nigeria (2025 Edition)',
+      teaser: 'Complete guide covering everything you need to know about residential solar systems in Nigeria\'s unique environment.',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop',
       date: 'November 2024',
-      category: 'Business'
-    },
-    {
-      title: 'Solar Panel Maintenance Tips for Nigerian Climate',
-      teaser: 'Expert tips on maintaining your solar system during harmattan, rainy season, and year-round.',
-      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
-      date: 'October 2024',
-      category: 'Maintenance'
-    },
-    {
-      title: 'Understanding Solar Inverters: Complete Guide',
-      teaser: 'Learn about different types of solar inverters, their features, and how to choose the right one.',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
-      date: 'October 2024',
-      category: 'Technology'
-    },
-    {
-      title: 'Solar Battery Storage: LiFePO4 vs Tubular Batteries',
-      teaser: 'Compare battery technologies, lifespan, costs, and performance for Nigerian solar applications.',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
-      date: 'September 2024',
-      category: 'Technology'
-    },
-    {
-      title: 'Government Solar Incentives and Policies in Nigeria',
-      teaser: 'Overview of federal and state policies supporting solar energy adoption and available incentives.',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop',
-      date: 'September 2024',
-      category: 'Policy'
-    },
-    {
-      title: 'Case Study: 20kVA Solar Installation for Factory',
-      teaser: 'Real-world example of large-scale commercial solar installation and its impact on operations.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop',
-      date: 'August 2024',
-      category: 'Case Study'
-    },
-    {
-      title: 'Solar Energy Myths vs Facts in Nigeria',
-      teaser: 'Debunking common misconceptions about solar power and revealing the truth about solar energy.',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&h=300&fit=crop',
-      date: 'August 2024',
-      category: 'Education'
-    },
-    {
-      title: 'Off-Grid vs Grid-Tied Solar Systems: Which to Choose?',
-      teaser: 'Compare off-grid and grid-tied systems to determine the best solution for your energy needs.',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
-      date: 'July 2024',
       category: 'Solar Guide'
     },
     {
-      title: 'Solar Installation Process: What to Expect',
-      teaser: 'Step-by-step guide to solar installation from consultation to commissioning in Nigeria.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop',
-      date: 'July 2024',
+      title: 'How to Make Your Home More Energy Efficient Before Going Solar',
+      teaser: 'Learn practical steps to reduce your energy consumption before installing solar panels for maximum efficiency.',
+      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
+      date: 'November 2024',
+      category: 'Energy Efficiency'
+    },
+    {
+      title: '15 Powerful Benefits of Installing Solar Panels at Home',
+      teaser: 'Comprehensive list of advantages that make solar panels a smart investment for Nigerian homeowners.',
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
+      date: 'October 2024',
+      category: 'Benefits'
+    },
+    {
+      title: 'Avoid These 7 Common Mistakes When Choosing a Solar Installer in Nigeria',
+      teaser: 'Critical mistakes to avoid when selecting a solar installation company to ensure quality and value.',
+      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
+      date: 'October 2024',
       category: 'Installation'
     },
     {
-      title: 'Environmental Impact of Solar Energy in Nigeria',
-      teaser: 'How solar power contributes to environmental sustainability and carbon footprint reduction.',
+      title: 'The Truth About Rooftop Solar Panels: Are They Safe for Your Home?',
+      teaser: 'Address common safety concerns and myths about rooftop solar panel installations.',
+      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop',
+      date: 'September 2024',
+      category: 'Safety'
+    },
+    {
+      title: 'How to Finance Your Solar System in Nigeria Without Breaking the Bank',
+      teaser: 'Explore financing options and payment plans that make solar energy accessible for Nigerian families.',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop',
+      date: 'September 2024',
+      category: 'Financing'
+    },
+    {
+      title: 'Understanding Net Metering and Energy Storage in Nigeria',
+      teaser: 'Learn about net metering policies and battery storage solutions for optimal energy management.',
+      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&h=300&fit=crop',
+      date: 'August 2024',
+      category: 'Technology'
+    },
+    {
+      title: 'Solar for Small Businesses: A Smart Investment in Unstable Grid Regions',
+      teaser: 'How small businesses can benefit from solar energy in areas with unreliable electricity supply.',
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
+      date: 'August 2024',
+      category: 'Business'
+    },
+    {
+      title: 'From Grid-Tied to Off-Grid: Which Solar System Is Best for You?',
+      teaser: 'Compare different solar system types to determine the best solution for your specific needs.',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop',
+      date: 'July 2024',
+      category: 'Solar Guide'
+    },
+    {
+      title: 'How Solar Energy Helps Fight Climate Change & Build a Sustainable Future',
+      teaser: 'Explore the environmental benefits of solar energy and its role in creating a sustainable future.',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
-      date: 'June 2024',
+      date: 'July 2024',
       category: 'Environment'
     }
   ];

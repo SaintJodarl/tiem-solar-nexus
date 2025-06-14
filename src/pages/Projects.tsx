@@ -12,55 +12,64 @@ const Projects = () => {
       name: '2.5kVA Solar System – Lagos',
       description: 'Installed for a family: 1 inverter, 2 batteries, 4 solar panels. Reliable power during outages.',
       location: 'Lagos State',
-      capacity: '2.5kVA'
+      capacity: '2.5kVA',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841681/2..5KVA_nouewt.jpg'
     },
     {
       name: '5kVA Commercial Setup – Abuja',
       description: 'Small business solution with backup power for shop operations and lighting.',
       location: 'Abuja',
-      capacity: '5kVA'
+      capacity: '5kVA',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841849/5KVA_wownjw.jpg'
     },
     {
       name: '10kVA Industrial System – Kano',
       description: 'Medium-scale industrial installation for textile manufacturing facility.',
       location: 'Kano State',
-      capacity: '10kVA'
+      capacity: '10kVA',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841915/10KVA_pswc4r.jpg'
     },
     {
       name: '3.5kVA Residential – Ibadan',
       description: 'Complete home solution for medical practitioner with critical power needs.',
       location: 'Ibadan, Oyo State',
-      capacity: '3.5kVA'
+      capacity: '3.5kVA',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841679/3.5KVA_jxaatm.jpg'
     },
     {
       name: '20kVA Factory Setup – Shomolu',
       description: 'Large-scale solar installation for textile customization factory.',
       location: 'Shomolu, Lagos',
-      capacity: '20kVA'
+      capacity: '20kVA',
+      image: 'https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop'
     },
     {
       name: '1kVA Apartment Solution – Port Harcourt',
       description: 'Compact solar system for studio apartment with basic power needs.',
       location: 'Port Harcourt',
-      capacity: '1kVA'
+      capacity: '1kVA',
+      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop'
     },
     {
       name: '7.5kVA Office Complex – Kaduna',
       description: 'Commercial office building with reliable solar backup power system.',
       location: 'Kaduna State',
-      capacity: '7.5kVA'
+      capacity: '7.5kVA',
+      image: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=400&h=300&fit=crop'
     },
     {
       name: '15kVA Hospital Installation – Enugu',
       description: 'Critical power backup for medical facility with 24/7 operation requirements.',
       location: 'Enugu State',
-      capacity: '15kVA'
+      capacity: '15kVA',
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop'
     },
     {
       name: '5kVA School Project – Ogun',
       description: 'Educational institution solar installation for classrooms and administrative offices.',
       location: 'Ogun State',
-      capacity: '5kVA'
+      capacity: '5kVA',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop'
     }
   ];
 
@@ -107,13 +116,12 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20">
-                <div className="relative overflow-hidden rounded-t-lg h-48 bg-muted flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl mb-2">⚡</div>
-                    <p className="text-muted-foreground">
-                      [Project Image Placeholder]
-                    </p>
-                  </div>
+                <div className="relative overflow-hidden rounded-t-lg h-48">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <CardHeader>
