@@ -129,24 +129,32 @@ Explore our expertly crafted solar systems—designed to power your home or busi
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8">Ready to Switch to Solar Energy?</h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild>
-              <a href="/services">See Our Services</a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="tel:+2348063840230">Speak to a Consultant</a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="https://wa.me/2348063840230" target="_blank" rel="noopener noreferrer">
-                WhatsApp Us
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+<section className="py-20 bg-primary text-white">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl sm:text-4xl font-bold mb-8">Ready to Switch to Solar Energy?</h2>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <Button size="lg" variant="secondary" asChild>
+        <a href="/services">See Our Services</a>
+      </Button>
+
+      <a
+        href="tel:+2348063840230"
+        className="px-4 py-2 text-base font-medium rounded-md bg-white text-black border border-black hover:bg-yellow-400 hover:text-black transition duration-300"
+      >
+        Speak to a Consultant
+      </a>
+
+      <a
+        href="https://wa.me/2348063840230"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-4 py-2 text-base font-medium rounded-md bg-white text-black border border-black hover:bg-yellow-400 hover:text-black transition duration-300"
+      >
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
 
       <ContactSection />
       <Footer />

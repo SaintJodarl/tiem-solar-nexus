@@ -204,10 +204,10 @@ const Projects = () => {
             <Button size="lg" variant="secondary" asChild>
               <a href="/products">See Packages</a>
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>
+            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white text-primary" asChild>
               <a href="tel:+2348063840230">Speak to a Consultant</a>
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>
+            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white text-primary" asChild>
               <a href="https://wa.me/2348063840230" target="_blank" rel="noopener noreferrer">
                 WhatsApp Us
               </a>
