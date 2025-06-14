@@ -161,29 +161,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Categories Filter */}
-      <section className="py-8 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Browse by Category</h2>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category)}
-                className="text-sm"
-                size="sm"
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Blog Posts Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -261,9 +238,37 @@ const Blog = () => {
               </Button>
             </div>
           )}
+        </div>
+      </section>
 
+      {/* Categories Filter - Moved down here */}
+      <section className="py-8 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Browse by Category</h2>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-3">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={selectedCategory === category ? "default" : "outline"}
+                onClick={() => setSelectedCategory(category)}
+                className="text-sm"
+                size="sm"
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Continue with existing sections */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Newsletter Signup */}
-          <div className="mt-16 text-center">
+          <div className="text-center">
             <Card className="max-w-2xl mx-auto p-8 bg-muted/30">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-foreground mb-4">
