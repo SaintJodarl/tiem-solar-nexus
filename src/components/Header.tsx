@@ -50,7 +50,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px:8">
         <div className="flex items-center justify-between h-16">
           {/* Logo — acts as home button */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 mt-3">
             <Link to="/" className="flex items-center" aria-label="TIEM Energy Home">
               <img
                 src="/lovable-uploads/1d2fb112-5129-4d2a-b139-7d1a61a564a1.png"
@@ -82,7 +82,7 @@ const Header = () => {
           </NavigationMenu>
 
           {/* Right side actions */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 mt-3">
             <div className="hidden xl:flex items-center">
               {/* Get Solar Quote always points to our Funnell page */}
               <Link
