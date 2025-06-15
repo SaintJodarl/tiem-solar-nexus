@@ -19,7 +19,7 @@ export default function ThankYou() {
       <section 
         className="flex-1 flex flex-col items-center justify-center px-4 py-12 relative bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=3011&h=4016&q=80')",
+          backgroundImage: "url('https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749897589/Solarroof_2_jw2vg8.jpg')",
           minHeight: "80vh"
         }}
       >
@@ -32,7 +32,7 @@ export default function ThankYou() {
           <div
             className="w-32 h-32 mx-auto mb-8 rounded-full bg-cover bg-center shadow-2xl border-4 animate-scale-in"
             style={{
-              backgroundImage: "url('/lovable-uploads/f30c4dfb-0659-44b2-8867-b13d9a15decd.png')",
+              backgroundImage: "url('https://res.cloudinary.com/dt7mxnrxo/image/upload/v1750000645/TIEM_FAVICON_r03nma.png')",
               borderColor: accentYellow,
             }}
           />
@@ -92,7 +92,7 @@ export default function ThankYou() {
             {/* Additional Info */}
             <div className="mt-8 pt-6 border-t border-gray-200">
               <p className="text-gray-600 text-sm md:text-base">
-                Questions? Call us at <span className="font-semibold" style={{ color: brandRed }}>+234 XXX XXX XXXX</span> or email <span className="font-semibold" style={{ color: brandRed }}>info@tiemenergy.com</span>
+                Questions? Call us at <span className="font-semibold" style={{ color: brandRed }}>+234 806 384 0230</span> or email <span className="font-semibold" style={{ color: brandRed }}>info@tiemenergy.com</span>
               </p>
             </div>
           </div>
