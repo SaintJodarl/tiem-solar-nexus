@@ -28,6 +28,8 @@ import BlogPost10 from "./pages/BlogPost10";
 import BlogPost11 from "./pages/BlogPost11";
 import BlogPost12 from "./pages/BlogPost12";
 import NotFound from "./pages/NotFound";
+import GetQuote from "./pages/GetQuote";
+import ThankYou from "./pages/ThankYou";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +50,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/get-quote" element={<GetQuote />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/1" element={<BlogPost1 />} />
           <Route path="/blog/2" element={<BlogPost2 />} />
