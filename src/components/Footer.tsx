@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
@@ -15,7 +14,7 @@ const Footer = () => {
 
   const quickLinks = [
     { name: 'About Us', href: '/about' },
-    { name: 'Products', href: '/products' },
+    { name: 'Store', href: '/store' },
     { name: 'Installation Services', href: '/services' },
     { name: 'Warranties', href: '/services' },
     { name: 'FAQs', href: '/blog' },
@@ -64,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {productCategories.map((category) => (
                 <li key={category}>
-                  <Link to="/products" className="text-background/80 hover:text-accent transition-colors text-base">
+                  <Link to="/store" className="text-background/80 hover:text-accent transition-colors text-base">
                     {category}
                   </Link>
                 </li>

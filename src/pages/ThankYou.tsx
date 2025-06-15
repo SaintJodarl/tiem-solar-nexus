@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -45,7 +44,7 @@ export default function ThankYou() {
               <Button
                 className="w-full font-bold py-3 rounded-lg text-white text-lg animate-fade-in"
                 style={{ backgroundColor: brandRed }}
-                onClick={() => navigate("/products")}
+                onClick={() => navigate("/store")}
               >
                 🔴 See Our Products
               </Button>
