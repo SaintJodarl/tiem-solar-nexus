@@ -43,6 +43,13 @@ const USPSection = () => {
     }
   ];
 
+  const [imageErrors, setImageErrors] = React.useState<{[key: number]: boolean}>({});
+
+  const handleImageError = (index: number, title: string, imageUrl: string) => {
+    console.log(`Failed to load image for ${title}:`, imageUrl);
+    setImageErrors(prev => ({ ...prev, [index]: true }));
+  };
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,16 +65,23 @@ const USPSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {usps.map((usp, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={usp.image}
-                  alt={usp.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  onError={(e) => {
-                    console.log(`Failed to load image for ${usp.title}:`, usp.image);
-                  }}
-                />
+              <div className="h-48 overflow-hidden relative">
+                {imageErrors[index] && usp.title === 'Local Expertise' ? (
+                  <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-gray-600 mb-2">🌍</div>
+                      <div className="text-lg font-semibold text-gray-700">Climate Optimized</div>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={usp.image}
+                    alt={usp.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    onError={() => handleImageError(index, usp.title, usp.image)}
+                  />
+                )}
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
