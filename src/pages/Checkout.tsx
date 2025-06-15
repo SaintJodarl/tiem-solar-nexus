@@ -182,14 +182,14 @@ const Checkout = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Card className="max-w-2xl mx-auto">
               <CardContent className="pt-6">
-                <div className="text-6xl mb-6">✅</div>
-                <h1 className="text-3xl font-bold text-foreground mb-4">Order Confirmed!</h1>
-                <p className="text-muted-foreground mb-6">
+                <div className="text-9xl mb-6">✅</div>
+                <h1 className="text-5xl font-bold text-foreground mb-4">Order Confirmed!</h1>
+                <p className="text-muted-foreground mb-6 text-2xl">
                   Thank you for choosing TIEM Energy! We've received your order and will contact you within 24 hours to arrange installation.
                 </p>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                  <h3 className="font-semibold text-green-800 mb-2">What happens next?</h3>
-                  <ul className="text-sm text-green-700 space-y-1 text-left">
+                  <h3 className="font-semibold text-green-800 mb-2 text-2xl">What happens next?</h3>
+                  <ul className="text-xl text-green-700 space-y-1 text-left">
                     <li>• Our team will call you within 24 hours to confirm details</li>
                     <li>• We'll schedule a convenient installation date</li>
                     <li>• Our certified engineers will handle the complete setup</li>
@@ -197,10 +197,10 @@ const Checkout = () => {
                   </ul>
                 </div>
                 <div className="space-y-3">
-                  <Button asChild>
+                  <Button asChild size="lg" className="text-xl py-6">
                     <a href="/products">Continue Shopping</a>
                   </Button>
-                  <Button variant="outline" asChild>
+                  <Button variant="outline" asChild size="lg" className="text-xl py-6">
                     <a href="/">Return Home</a>
                   </Button>
                 </div>
@@ -220,14 +220,14 @@ const Checkout = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Secure Checkout</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <h1 className="text-6xl sm:text-8xl font-bold mb-6">Secure Checkout</h1>
+          <p className="text-3xl max-w-3xl mx-auto">
             Complete your solar energy purchase with confidence
           </p>
           <div className="mt-6">
-            <Button variant="secondary" asChild>
+            <Button variant="secondary" asChild size="lg" className="text-xl py-6">
               <a href="/cart">
-                <ArrowLeft className="h-4 w-4 mr-2" />
+                <ArrowLeft className="h-6 w-6 mr-2" />
                 Back to Cart
               </a>
             </Button>
@@ -238,17 +238,17 @@ const Checkout = () => {
       {/* Trust Indicators */}
       <section className="py-8 bg-green-50 border-b">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-8 text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-xl">
             <div className="flex items-center gap-2 text-green-700">
-              <Shield className="h-5 w-5" />
+              <Shield className="h-8 w-8" />
               <span>Secure Payment</span>
             </div>
             <div className="flex items-center gap-2 text-green-700">
-              <Truck className="h-5 w-5" />
+              <Truck className="h-8 w-8" />
               <span>Free Installation</span>
             </div>
             <div className="flex items-center gap-2 text-green-700">
-              <Clock className="h-5 w-5" />
+              <Clock className="h-8 w-8" />
               <span>24/7 Support</span>
             </div>
           </div>
@@ -265,38 +265,38 @@ const Checkout = () => {
                 {/* Personal Information */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>Personal Information</CardTitle>
+                    <CardTitle className="text-3xl">Personal Information</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name *</Label>
+                        <Label htmlFor="firstName" className="text-xl">First Name *</Label>
                         <Input
                           id="firstName"
                           name="firstName"
                           value={formData.firstName}
                           onChange={handleInputChange}
                           placeholder="Enter your first name"
-                          className={errors.firstName ? 'border-red-500' : ''}
+                          className={`text-xl py-6 ${errors.firstName ? 'border-red-500' : ''}`}
                         />
-                        {errors.firstName && <p className="text-sm text-red-500">{errors.firstName}</p>}
+                        {errors.firstName && <p className="text-lg text-red-500">{errors.firstName}</p>}
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name *</Label>
+                        <Label htmlFor="lastName" className="text-xl">Last Name *</Label>
                         <Input
                           id="lastName"
                           name="lastName"
                           value={formData.lastName}
                           onChange={handleInputChange}
                           placeholder="Enter your last name"
-                          className={errors.lastName ? 'border-red-500' : ''}
+                          className={`text-xl py-6 ${errors.lastName ? 'border-red-500' : ''}`}
                         />
-                        {errors.lastName && <p className="text-sm text-red-500">{errors.lastName}</p>}
+                        {errors.lastName && <p className="text-lg text-red-500">{errors.lastName}</p>}
                       </div>
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label htmlFor="email" className="text-xl">Email Address *</Label>
                       <Input
                         id="email"
                         name="email"
@@ -304,13 +304,13 @@ const Checkout = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
-                        className={errors.email ? 'border-red-500' : ''}
+                        className={`text-xl py-6 ${errors.email ? 'border-red-500' : ''}`}
                       />
-                      {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
+                      {errors.email && <p className="text-lg text-red-500">{errors.email}</p>}
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number *</Label>
+                      <Label htmlFor="phone" className="text-xl">Phone Number *</Label>
                       <Input
                         id="phone"
                         name="phone"
@@ -318,9 +318,9 @@ const Checkout = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="+234 XXX XXX XXXX"
-                        className={errors.phone ? 'border-red-500' : ''}
+                        className={`text-xl py-6 ${errors.phone ? 'border-red-500' : ''}`}
                       />
-                      {errors.phone && <p className="text-sm text-red-500">{errors.phone}</p>}
+                      {errors.phone && <p className="text-lg text-red-500">{errors.phone}</p>}
                     </div>
                   </CardContent>
                 </Card>
@@ -328,55 +328,56 @@ const Checkout = () => {
                 {/* Delivery Address */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>Installation Address</CardTitle>
+                    <CardTitle className="text-3xl">Installation Address</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="address">Street Address *</Label>
+                      <Label htmlFor="address" className="text-xl">Street Address *</Label>
                       <Textarea
                         id="address"
                         name="address"
                         value={formData.address}
                         onChange={handleInputChange}
                         placeholder="Enter your complete address"
-                        className={`min-h-[80px] ${errors.address ? 'border-red-500' : ''}`}
+                        className={`min-h-[100px] text-xl ${errors.address ? 'border-red-500' : ''}`}
                       />
-                      {errors.address && <p className="text-sm text-red-500">{errors.address}</p>}
+                      {errors.address && <p className="text-lg text-red-500">{errors.address}</p>}
                     </div>
                     
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="city">City *</Label>
+                        <Label htmlFor="city" className="text-xl">City *</Label>
                         <Input
                           id="city"
                           name="city"
                           value={formData.city}
                           onChange={handleInputChange}
                           placeholder="City"
-                          className={errors.city ? 'border-red-500' : ''}
+                          className={`text-xl py-6 ${errors.city ? 'border-red-500' : ''}`}
                         />
-                        {errors.city && <p className="text-sm text-red-500">{errors.city}</p>}
+                        {errors.city && <p className="text-lg text-red-500">{errors.city}</p>}
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="state">State *</Label>
+                        <Label htmlFor="state" className="text-xl">State *</Label>
                         <Input
                           id="state"
                           name="state"
                           value={formData.state}
                           onChange={handleInputChange}
                           placeholder="State"
-                          className={errors.state ? 'border-red-500' : ''}
+                          className={`text-xl py-6 ${errors.state ? 'border-red-500' : ''}`}
                         />
-                        {errors.state && <p className="text-sm text-red-500">{errors.state}</p>}
+                        {errors.state && <p className="text-lg text-red-500">{errors.state}</p>}
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="postalCode">Postal Code</Label>
+                        <Label htmlFor="postalCode" className="text-xl">Postal Code</Label>
                         <Input
                           id="postalCode"
                           name="postalCode"
                           value={formData.postalCode}
                           onChange={handleInputChange}
                           placeholder="Postal Code"
+                          className="text-xl py-6"
                         />
                       </div>
                     </div>
@@ -386,7 +387,7 @@ const Checkout = () => {
                 {/* Payment Method */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>Payment Method *</CardTitle>
+                    <CardTitle className="text-3xl">Payment Method *</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -394,59 +395,59 @@ const Checkout = () => {
                         type="button"
                         variant={formData.paymentMethod === 'card' ? 'default' : 'outline'}
                         onClick={() => setFormData(prev => ({ ...prev, paymentMethod: 'card' }))}
-                        className="p-4 h-auto"
+                        className="p-6 h-auto text-lg"
                       >
                         <div className="text-center">
-                          <CreditCard className="h-6 w-6 mx-auto mb-2" />
-                          <div className="text-sm">Debit/Credit Card</div>
+                          <CreditCard className="h-8 w-8 mx-auto mb-2" />
+                          <div className="text-lg">Debit/Credit Card</div>
                         </div>
                       </Button>
                       <Button
                         type="button"
                         variant={formData.paymentMethod === 'bank' ? 'default' : 'outline'}
                         onClick={() => setFormData(prev => ({ ...prev, paymentMethod: 'bank' }))}
-                        className="p-4 h-auto"
+                        className="p-6 h-auto text-lg"
                       >
                         <div className="text-center">
-                          <Building className="h-6 w-6 mx-auto mb-2" />
-                          <div className="text-sm">Bank Transfer</div>
+                          <Building className="h-8 w-8 mx-auto mb-2" />
+                          <div className="text-lg">Bank Transfer</div>
                         </div>
                       </Button>
                       <Button
                         type="button"
                         variant={formData.paymentMethod === 'mobile' ? 'default' : 'outline'}
                         onClick={() => setFormData(prev => ({ ...prev, paymentMethod: 'mobile' }))}
-                        className="p-4 h-auto"
+                        className="p-6 h-auto text-lg"
                       >
                         <div className="text-center">
-                          <Smartphone className="h-6 w-6 mx-auto mb-2" />
-                          <div className="text-sm">Mobile Money</div>
+                          <Smartphone className="h-8 w-8 mx-auto mb-2" />
+                          <div className="text-lg">Mobile Money</div>
                         </div>
                       </Button>
                       <Button
                         type="button"
                         variant={formData.paymentMethod === 'crypto' ? 'default' : 'outline'}
                         onClick={() => setFormData(prev => ({ ...prev, paymentMethod: 'crypto' }))}
-                        className="p-4 h-auto"
+                        className="p-6 h-auto text-lg"
                       >
                         <div className="text-center">
-                          <Bitcoin className="h-6 w-6 mx-auto mb-2" />
-                          <div className="text-sm">Cryptocurrency</div>
+                          <Bitcoin className="h-8 w-8 mx-auto mb-2" />
+                          <div className="text-lg">Cryptocurrency</div>
                         </div>
                       </Button>
                     </div>
-                    {errors.paymentMethod && <p className="text-sm text-red-500 mt-2">{errors.paymentMethod}</p>}
+                    {errors.paymentMethod && <p className="text-lg text-red-500 mt-2">{errors.paymentMethod}</p>}
                   </CardContent>
                 </Card>
 
                 {/* Additional Information */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>Additional Information</CardTitle>
+                    <CardTitle className="text-3xl">Additional Information</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="installationDate">Preferred Installation Date</Label>
+                      <Label htmlFor="installationDate" className="text-xl">Preferred Installation Date</Label>
                       <Input
                         id="installationDate"
                         name="installationDate"
@@ -454,18 +455,19 @@ const Checkout = () => {
                         value={formData.installationDate}
                         onChange={handleInputChange}
                         min={new Date().toISOString().split('T')[0]}
+                        className="text-xl py-6"
                       />
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="specialInstructions">Special Instructions</Label>
+                      <Label htmlFor="specialInstructions" className="text-xl">Special Instructions</Label>
                       <Textarea
                         id="specialInstructions"
                         name="specialInstructions"
                         value={formData.specialInstructions}
                         onChange={handleInputChange}
                         placeholder="Any special requirements or instructions for installation..."
-                        className="min-h-[80px]"
+                        className="min-h-[100px] text-xl"
                       />
                     </div>
                   </CardContent>
@@ -479,20 +481,22 @@ const Checkout = () => {
                         id="agreeToTerms"
                         checked={formData.agreeToTerms}
                         onCheckedChange={(checked) => handleCheckboxChange('agreeToTerms', checked)}
+                        className="mt-1"
                       />
-                      <Label htmlFor="agreeToTerms" className="text-sm leading-5">
+                      <Label htmlFor="agreeToTerms" className="text-xl leading-6">
                         I agree to the <a href="/terms" className="text-primary hover:underline">Terms and Conditions</a> and <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a> *
                       </Label>
                     </div>
-                    {errors.agreeToTerms && <p className="text-sm text-red-500">{errors.agreeToTerms}</p>}
+                    {errors.agreeToTerms && <p className="text-lg text-red-500">{errors.agreeToTerms}</p>}
                     
                     <div className="flex items-start space-x-2">
                       <Checkbox
                         id="subscribeNewsletter"
                         checked={formData.subscribeNewsletter}
                         onCheckedChange={(checked) => handleCheckboxChange('subscribeNewsletter', checked)}
+                        className="mt-1"
                       />
-                      <Label htmlFor="subscribeNewsletter" className="text-sm leading-5">
+                      <Label htmlFor="subscribeNewsletter" className="text-xl leading-6">
                         Subscribe to our newsletter for solar energy tips and special offers
                       </Label>
                     </div>
@@ -501,7 +505,7 @@ const Checkout = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full" 
+                  className="w-full text-2xl py-8" 
                   size="lg"
                   disabled={isProcessing}
                 >
@@ -514,33 +518,33 @@ const Checkout = () => {
             <div>
               <Card className="sticky top-4">
                 <CardHeader>
-                  <CardTitle>Order Summary</CardTitle>
+                  <CardTitle className="text-3xl">Order Summary</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {cartItems.map((item) => (
                     <div key={item.id} className="flex justify-between">
                       <div>
-                        <p className="font-medium">{item.name}</p>
-                        <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
+                        <p className="font-medium text-xl">{item.name}</p>
+                        <p className="text-lg text-muted-foreground">Qty: {item.quantity}</p>
                       </div>
-                      <p className="font-medium">₦{(item.price * item.quantity).toLocaleString()}</p>
+                      <p className="font-medium text-xl">₦{(item.price * item.quantity).toLocaleString()}</p>
                     </div>
                   ))}
                   
                   <div className="border-t pt-4 space-y-2">
-                    <div className="flex justify-between">
+                    <div className="flex justify-between text-xl">
                       <span>Subtotal:</span>
                       <span>₦{subtotal.toLocaleString()}</span>
                     </div>
-                    <div className="flex justify-between text-green-600">
+                    <div className="flex justify-between text-green-600 text-xl">
                       <span>Installation:</span>
                       <span>Free</span>
                     </div>
-                    <div className="flex justify-between text-green-600">
+                    <div className="flex justify-between text-green-600 text-xl">
                       <span>Warranty:</span>
                       <span>Included</span>
                     </div>
-                    <div className="flex justify-between font-bold text-lg border-t pt-2">
+                    <div className="flex justify-between font-bold text-2xl border-t pt-2">
                       <span>Total:</span>
                       <span className="text-primary">₦{subtotal.toLocaleString()}</span>
                     </div>

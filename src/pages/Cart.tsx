@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -112,12 +111,12 @@ const Cart = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Card className="max-w-md mx-auto">
               <CardContent className="pt-6">
-                <ShoppingBag className="h-16 w-16 mx-auto text-muted-foreground mb-4" />
-                <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
-                <p className="text-muted-foreground mb-6">
+                <ShoppingBag className="h-32 w-32 mx-auto text-muted-foreground mb-4" />
+                <h2 className="text-4xl font-bold mb-4">Your cart is empty</h2>
+                <p className="text-muted-foreground mb-6 text-xl">
                   Looks like you haven't added any solar products to your cart yet.
                 </p>
-                <Button asChild>
+                <Button asChild size="lg" className="text-xl py-6">
                   <a href="/products">Continue Shopping</a>
                 </Button>
               </CardContent>
@@ -136,14 +135,14 @@ const Cart = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Your Cart</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <h1 className="text-6xl sm:text-8xl font-bold mb-6">Your Cart</h1>
+          <p className="text-3xl max-w-3xl mx-auto">
             Review your selected solar products before checkout
           </p>
           <div className="mt-6">
-            <Button variant="secondary" asChild>
+            <Button variant="secondary" asChild size="lg" className="text-xl py-6">
               <a href="/products">
-                <ArrowLeft className="h-4 w-4 mr-2" />
+                <ArrowLeft className="h-6 w-6 mr-2" />
                 Continue Shopping
               </a>
             </Button>
@@ -159,7 +158,7 @@ const Cart = () => {
             <div className="lg:col-span-2 space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Cart Items ({cartItems.length})</CardTitle>
+                  <CardTitle className="text-3xl">Cart Items ({cartItems.length})</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {cartItems.map((item) => (
@@ -167,22 +166,22 @@ const Cart = () => {
                       <img
                         src={item.image}
                         alt={item.name}
-                        className="w-20 h-20 object-cover rounded"
+                        className="w-24 h-24 object-cover rounded"
                       />
                       <div className="flex-1">
-                        <h4 className="font-semibold text-foreground">{item.name}</h4>
+                        <h4 className="font-semibold text-foreground text-2xl">{item.name}</h4>
                         <div className="flex items-center gap-2 mt-1">
-                          <p className="text-primary font-bold">₦{item.price.toLocaleString()}</p>
+                          <p className="text-primary font-bold text-2xl">₦{item.price.toLocaleString()}</p>
                           {item.originalPrice && (
-                            <p className="text-sm text-muted-foreground line-through">
+                            <p className="text-xl text-muted-foreground line-through">
                               ₦{item.originalPrice.toLocaleString()}
                             </p>
                           )}
                         </div>
                         {item.savings && (
-                          <p className="text-sm text-green-600">You save ₦{item.savings.toLocaleString()}</p>
+                          <p className="text-xl text-green-600">You save ₦{item.savings.toLocaleString()}</p>
                         )}
-                        <p className={`text-sm ${item.inStock ? 'text-green-600' : 'text-red-600'}`}>
+                        <p className={`text-xl ${item.inStock ? 'text-green-600' : 'text-red-600'}`}>
                           {item.inStock ? 'In Stock' : 'Out of Stock'}
                         </p>
                       </div>
@@ -191,33 +190,35 @@ const Cart = () => {
                           variant="outline"
                           size="sm"
                           onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                          className="text-lg p-3"
                         >
-                          <Minus className="h-4 w-4" />
+                          <Minus className="h-6 w-6" />
                         </Button>
                         <Input
                           type="number"
                           value={item.quantity}
                           onChange={(e) => updateQuantity(item.id, parseInt(e.target.value) || 1)}
-                          className="w-16 text-center"
+                          className="w-20 text-center text-xl py-3"
                           min="1"
                         />
                         <Button
                           variant="outline"
                           size="sm"
                           onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                          className="text-lg p-3"
                         >
-                          <Plus className="h-4 w-4" />
+                          <Plus className="h-6 w-6" />
                         </Button>
                       </div>
                       <div className="text-right">
-                        <p className="font-bold">₦{(item.price * item.quantity).toLocaleString()}</p>
+                        <p className="font-bold text-2xl">₦{(item.price * item.quantity).toLocaleString()}</p>
                         <Button
                           variant="destructive"
                           size="sm"
                           onClick={() => removeItem(item.id)}
-                          className="mt-2"
+                          className="mt-2 text-lg py-3"
                         >
-                          <Trash2 className="h-4 w-4" />
+                          <Trash2 className="h-5 w-5" />
                         </Button>
                       </div>
                     </div>
@@ -228,16 +229,16 @@ const Cart = () => {
               {/* Coupon Section */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Discount Code</CardTitle>
+                  <CardTitle className="text-3xl">Discount Code</CardTitle>
                 </CardHeader>
                 <CardContent>
                   {appliedCoupon ? (
-                    <div className="flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg">
+                    <div className="flex items-center justify-between p-4 bg-green-50 border border-green-200 rounded-lg">
                       <div>
-                        <p className="font-medium text-green-800">Coupon Applied: {appliedCoupon.code}</p>
-                        <p className="text-sm text-green-600">{appliedCoupon.description}</p>
+                        <p className="font-medium text-green-800 text-xl">Coupon Applied: {appliedCoupon.code}</p>
+                        <p className="text-lg text-green-600">{appliedCoupon.description}</p>
                       </div>
-                      <Button variant="outline" size="sm" onClick={removeCoupon}>
+                      <Button variant="outline" size="sm" onClick={removeCoupon} className="text-lg py-3">
                         Remove
                       </Button>
                     </div>
@@ -247,13 +248,14 @@ const Cart = () => {
                         placeholder="Enter coupon code"
                         value={couponCode}
                         onChange={(e) => setCouponCode(e.target.value)}
+                        className="text-xl py-6"
                       />
-                      <Button onClick={applyCoupon} disabled={!couponCode.trim()}>
+                      <Button onClick={applyCoupon} disabled={!couponCode.trim()} className="text-lg px-6">
                         Apply
                       </Button>
                     </div>
                   )}
-                  <div className="mt-3 text-sm text-muted-foreground">
+                  <div className="mt-3 text-lg text-muted-foreground">
                     <p>Try these codes: SOLAR10, SAVE50K, NEWUSER</p>
                   </div>
                 </CardContent>
@@ -264,62 +266,62 @@ const Cart = () => {
             <div>
               <Card className="sticky top-4">
                 <CardHeader>
-                  <CardTitle>Order Summary</CardTitle>
+                  <CardTitle className="text-3xl">Order Summary</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex justify-between">
+                  <div className="flex justify-between text-xl">
                     <span>Subtotal:</span>
                     <span>₦{subtotal.toLocaleString()}</span>
                   </div>
                   
                   {totalSavings > 0 && (
-                    <div className="flex justify-between text-green-600">
+                    <div className="flex justify-between text-green-600 text-xl">
                       <span>Product Savings:</span>
                       <span>-₦{totalSavings.toLocaleString()}</span>
                     </div>
                   )}
                   
                   {appliedCoupon && (
-                    <div className="flex justify-between text-green-600">
+                    <div className="flex justify-between text-green-600 text-xl">
                       <span>Coupon Discount ({appliedCoupon.code}):</span>
                       <span>-₦{discount.toLocaleString()}</span>
                     </div>
                   )}
                   
-                  <div className="flex justify-between">
+                  <div className="flex justify-between text-xl">
                     <span>Installation:</span>
                     <span className="text-green-600">Free</span>
                   </div>
                   
-                  <div className="flex justify-between">
+                  <div className="flex justify-between text-xl">
                     <span>Delivery:</span>
                     <span className="text-green-600">Free</span>
                   </div>
                   
                   <div className="border-t pt-4">
-                    <div className="flex justify-between font-bold text-lg">
+                    <div className="flex justify-between font-bold text-2xl">
                       <span>Total:</span>
                       <span className="text-primary">₦{total.toLocaleString()}</span>
                     </div>
                     {(totalSavings + discount) > 0 && (
-                      <p className="text-sm text-green-600 text-right">
+                      <p className="text-lg text-green-600 text-right">
                         Total Savings: ₦{(totalSavings + discount).toLocaleString()}
                       </p>
                     )}
                   </div>
                   
                   <div className="space-y-3 pt-4">
-                    <Button className="w-full" size="lg" asChild>
+                    <Button className="w-full text-xl py-6" size="lg" asChild>
                       <a href="/checkout">Proceed to Checkout</a>
                     </Button>
-                    <Button variant="outline" className="w-full" asChild>
+                    <Button variant="outline" className="w-full text-xl py-6" asChild>
                       <a href="/products">Continue Shopping</a>
                     </Button>
                   </div>
                   
                   <div className="text-center pt-4 border-t">
-                    <p className="text-sm text-muted-foreground mb-2">Need help with your order?</p>
-                    <Button variant="outline" size="sm" asChild>
+                    <p className="text-lg text-muted-foreground mb-2">Need help with your order?</p>
+                    <Button variant="outline" size="sm" asChild className="text-lg py-3">
                       <a href="https://wa.me/2348063840230" target="_blank" rel="noopener noreferrer">
                         WhatsApp Support
                       </a>
