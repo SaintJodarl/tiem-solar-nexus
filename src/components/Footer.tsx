@@ -15,7 +15,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'About Us', href: '/about' },
     { name: 'Products', href: '/products' },
-    { name: 'Store', href: '/store' },
+    { name: 'Ibusa', href: '/store' },
     { name: 'Installation Services', href: '/services' },
     { name: 'Warranties', href: '/services' },
     { name: 'FAQs', href: '/blog' },
@@ -31,7 +31,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/1d2fb112-5129-4d2a-b139-7d1a61a564a1.png" 
               alt="TIEM Energy Logo" 
-              className="h-12 w-auto mb-4"
+              className="h-16 w-auto mb-4"
             />
             <p className="text-background/80 text-base leading-relaxed">
               Leading provider of high-quality solar energy solutions across Nigeria. Empowering homes and businesses with reliable, affordable solar power.

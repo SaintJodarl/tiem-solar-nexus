@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -34,7 +35,7 @@ const Header = () => {
     },
     { name: 'SERVICES', href: '/services' },
     { name: 'PRODUCTS', href: '/products' },
-    { name: 'STORE', href: '/store' },
+    { name: 'IBUSA', href: '/store' },
     { name: 'PROJECTS', href: '/projects' },
     { name: 'CONTACT', href: '/contact' },
     { name: 'BLOG', href: '/blog' },
@@ -56,7 +57,7 @@ const Header = () => {
               <img
                 src="/lovable-uploads/1d2fb112-5129-4d2a-b139-7d1a61a564a1.png"
                 alt="TIEM Energy Logo"
-                className="h-12 w-auto cursor-pointer"
+                className="h-16 w-auto cursor-pointer"
               />
             </Link>
           </div>

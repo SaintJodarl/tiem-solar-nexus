@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -97,6 +98,26 @@ const faqs = [
   {
     q: "Will solar really eliminate my electricity bills?",
     a: "In most cases, solar will drastically reduce or eliminate your power bills—ask us for a tailored estimate."
+  },
+  {
+    q: "What happens during long periods of rain or cloudy days? Won't I be left without power?",
+    a: "Not at all. Our solar systems are designed with battery backup and intelligent energy management. Even during cloudy days or rainy seasons, the system stores excess energy and automatically switches to battery power when needed. We also recommend sizing the system based on your usage, ensuring uninterrupted power regardless of the weather."
+  },
+  {
+    q: "Can I start small and expand my solar system later as my budget or power needs grow?",
+    a: "Absolutely. Our systems are designed to be modular and scalable. That means you can begin with a basic setup and upgrade components—like batteries or solar panels—over time. It's a smart and budget-friendly way to adopt solar while planning for future growth."
+  },
+  {
+    q: "What if my roof isn't ideal for solar panels (e.g., it's shaded or oddly shaped)?",
+    a: "No worries. We conduct a professional site assessment before installation. If your roof isn't optimal, we can explore alternative options like ground mounts or custom frames that maximize sunlight exposure and system efficiency—no matter the structure."
+  },
+  {
+    q: "Aren't solar systems complicated to use or maintain? I'm not a tech person.",
+    a: "We make going solar simple and stress-free. Once installed, your system runs automatically. No technical knowledge is needed! Plus, we offer monitoring systems so you can track your power usage easily. And our customer support and maintenance team are just a call away if you ever need help."
+  },
+  {
+    q: "I've heard some solar installers disappear after installation. How do I know you'll be around to support me?",
+    a: "That's a valid concern—and it's exactly why we emphasize after-sales support and MONITORING AND MAINTENANCE. We're a TRUSTWORTHY company with proven track records, real-life projects, and active customer support. You can count on us not just for installation, but for ongoing service, warranties, and peace of mind."
   }
 ];
 
@@ -418,7 +439,7 @@ export default function GetQuote() {
             </div>
             <div className="text-center">
               <img 
-                src="/lovable-uploads/46921667-e72c-478b-836b-a6b70f717c00.png"
+                src="https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749970455/solar-power-plant-designing-consultantancy1_lbg4oe.jpg"
                 alt="Solar Panel"
                 className="w-full max-w-md mx-auto"
               />
@@ -774,7 +795,7 @@ export default function GetQuote() {
           <Accordion type="multiple" className="space-y-4">
             {faqs.map((item, idx) => (
               <AccordionItem key={idx} value={`faq-${idx}`} className="bg-[#f7f7fa] rounded-lg animate-fade-in" style={{ animationDelay: `${0.1 * idx}s` }}>
-                <AccordionTrigger className="flex justify-between items-center p-4 text-lg font-semibold text-[#222] w-full [&>svg]:text-[#d20500]">
+                <AccordionTrigger className="flex justify-between items-center p-4 text-lg font-semibold text-[#222] w-full [&>svg]:text-[#d20500] [&>svg]:hidden">
                   <span>{item.q}</span>
                 </AccordionTrigger>
                 <AccordionContent className="p-4 text-gray-700 border-t text-base">
