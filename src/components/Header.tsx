@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ShoppingCart, Search, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -16,6 +17,7 @@ const Header = () => {
   const [cartItems, setCartItems] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +41,12 @@ const Header = () => {
     { name: 'BLOG', href: '/blog' },
   ];
 
+  const isActiveLink = (href: string) => {
+    if (href === '/' && location.pathname === '/') return true;
+    if (href !== '/' && location.pathname.startsWith(href)) return true;
+    return false;
+  };
+
   return (
     <header className={`h-20 sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-all duration-300 ${isScrolled ? 'bg-accent' : 'bg-background/95'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +55,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                src="/lovable-uploads/ba0ed9d0-e60e-4e7d-a66d-acfa48de53c8.png"
+                src="/lovable-uploads/b7a8b09e-77b5-416d-bbcc-ee117474e5f6.png"
                 alt="TIEM Energy Logo"
                 className="h-12 w-auto"
               />
@@ -56,48 +64,22 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden lg:flex">
-            <NavigationMenuList className="space-x-6">
+            <NavigationMenuList className="space-x-8">
               {navigationItems.map((item) => (
-                <NavigationMenuLink asChild>
-                  <Link
-                    to={item.href}
-                    className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-lg"
-                  >
-                    {item.name}
-                  </Link>
-                </NavigationMenuLink>
-                // <NavigationMenuItem key={item.name}>
-                //   {item.submenu ? (
-                //     <>
-                //       <NavigationMenuTrigger className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm bg-transparent">
-                //         {item.name}
-                //       </NavigationMenuTrigger>
-                //       <NavigationMenuContent>
-                //         <div className="w-48 p-2">
-                //           {item.submenu.map((subItem) => (
-                //             <NavigationMenuLink key={subItem.name} asChild>
-                //               <Link
-                //                 to={subItem.href}
-                //                 className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
-                //               >
-                //                 {subItem.name}
-                //               </Link>
-                //             </NavigationMenuLink>
-                //           ))}
-                //         </div>
-                //       </NavigationMenuContent>
-                //     </>
-                //   ) : (
-                //     <NavigationMenuLink asChild>
-                //       <Link
-                //         to={item.href}
-                //         className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
-                //       >
-                //         {item.name}
-                //       </Link>
-                //     </NavigationMenuLink>
-                //   )}
-                // </NavigationMenuItem>
+                <NavigationMenuItem key={item.name}>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      to={item.href}
+                      className={`text-foreground hover:text-primary transition-colors duration-200 font-medium text-xl pb-1 ${
+                        isActiveLink(item.href) 
+                          ? 'border-b-2 border-[#d20500] text-primary' 
+                          : ''
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
               ))}
             </NavigationMenuList>
           </NavigationMenu>
@@ -107,7 +89,7 @@ const Header = () => {
             <div className="hidden xl:flex items-center">
               <Link
                 to="/contact"
-                className="bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors text-sm"
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors text-base"
               >
                 Get Solar Quote
               </Link>
@@ -130,25 +112,13 @@ const Header = () => {
                     <div key={item.name}>
                       <Link
                         to={item.href}
-                        className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                        className={`text-xl font-medium text-foreground hover:text-primary transition-colors ${
+                          isActiveLink(item.href) ? 'text-primary border-l-2 border-primary pl-2' : ''
+                        }`}
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
                       </Link>
-                      {/* {item.submenu && (
-                        <div className="ml-4 mt-2 space-y-2">
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.name}
-                              to={subItem.href}
-                              className="block text-sm text-muted-foreground hover:text-primary transition-colors"
-                              onClick={() => setIsMenuOpen(false)}
-                            >
-                              {subItem.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )} */}
                     </div>
                   ))}
                   <div className="pt-4 border-t">
@@ -159,12 +129,12 @@ const Header = () => {
                       Get Solar Quote
                     </Link>
                     <div className="mt-4">
-                      <p className="text-sm text-muted-foreground mb-2">Contact us:</p>
-                      <a href="tel:+2348063840230" className="text-primary font-medium">
+                      <p className="text-base text-muted-foreground mb-2">Contact us:</p>
+                      <a href="tel:+2348063840230" className="text-primary font-medium text-base">
                         +234 806 384 0230
                       </a>
                       <br />
-                      <a href="tel:+2348165539671" className="text-primary font-medium">
+                      <a href="tel:+2348165539671" className="text-primary font-medium text-base">
                         +234 816 553 9671
                       </a>
                     </div>

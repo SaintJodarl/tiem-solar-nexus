@@ -31,7 +31,7 @@ const BlogPost2 = () => {
                 <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                   Solar Basics & Guides
                 </span>
-                <span className="text-muted-foreground text-sm">5 min read</span>
+                <span className="text-muted-foreground text-sm">2 min read</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 leading-tight">
@@ -39,7 +39,7 @@ const BlogPost2 = () => {
               </h1>
               
               <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop"
+                src="https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749970455/solar-power-plant-designing-consultantancy1_lbg4oe.jpg"
                 alt="Solar Energy Consultant"
                 className="w-full h-80 object-cover rounded-lg mb-8"
               />
@@ -51,12 +51,12 @@ const BlogPost2 = () => {
               </p>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">Who Is a Solar Energy Consultant?</h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-base">
                 A solar energy consultant is a trained expert who assesses your property's energy needs, analyzes potential savings, and recommends the best system for your goals and budget.
               </p>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">Key Roles of a Solar Consultant</h2>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6 text-base">
                 <li><strong>Site Assessment:</strong> Evaluate your roof space, sun exposure, and electrical setup.</li>
                 <li><strong>Energy Audit:</strong> Analyze your current electricity usage to right-size your system.</li>
                 <li><strong>Custom System Design:</strong> Recommend the ideal panel type, inverter, and battery setup.</li>
@@ -66,7 +66,7 @@ const BlogPost2 = () => {
               </ul>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">Why You Should Consider One</h2>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-8">
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-8 text-base">
                 <li>Avoid costly mistakes from poor system sizing or cheap installations.</li>
                 <li>Save time and money by leveraging their expertise and supplier network.</li>
                 <li>Gain peace of mind knowing your solar investment is optimized from day one.</li>
@@ -76,7 +76,7 @@ const BlogPost2 = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-4">
                   Going Solar? Talk to a Pro First
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 text-base">
                   Our certified consultants ensure you get the best results with zero guesswork. Contact us today for a free consultation.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

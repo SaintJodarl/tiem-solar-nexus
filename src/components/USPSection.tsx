@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -26,7 +27,7 @@ const USPSection = () => {
       icon: '🇳🇬',
       title: 'Local Expertise',
       description: 'Deep understanding of Nigerian climate and energy requirements',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749935710/ClimatePic.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
     },
     {
       icon: '🛡️',
@@ -69,7 +70,7 @@ const USPSection = () => {
                   <span className="text-2xl">{usp.icon}</span>
                   <h3 className="text-xl font-bold text-foreground">{usp.title}</h3>
                 </div>
-                <p className="text-muted-foreground">{usp.description}</p>
+                <p className="text-muted-foreground text-base">{usp.description}</p>
               </CardContent>
             </Card>
           ))}

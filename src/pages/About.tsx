@@ -148,7 +148,7 @@ const About = () => {
                   <h4 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                     <span className="text-2xl">🌱</span> Sustainability
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     Committed to clean, renewable energy that protects the environment and secures a better future for all.
                   </p>
                 </CardContent>
@@ -159,7 +159,7 @@ const About = () => {
                   <h4 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                     <span className="text-2xl">🚀</span> Innovation
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     Leveraging cutting-edge solar tech and evolving strategies to deliver efficient and modern energy solutions.
                   </p>
                 </CardContent>
@@ -170,7 +170,7 @@ const About = () => {
                   <h4 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                     <span className="text-2xl">😊</span> Customer Satisfaction
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     Our top priority is delighting customers through personalized service, top-tier equipment, and full post-installation support.
                   </p>
                 </CardContent>
@@ -181,7 +181,7 @@ const About = () => {
                   <h4 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                     <span className="text-2xl">🤝</span> Integrity
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     Honest recommendations, transparent pricing, and unwavering reliability in everything we do.
                   </p>
                 </CardContent>
@@ -192,7 +192,7 @@ const About = () => {
                   <h4 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                     <span className="text-2xl">🏆</span> Excellence
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     Every project meets high professional standards—built to perform, last, and impress.
                   </p>
                 </CardContent>
@@ -203,7 +203,7 @@ const About = () => {
                   <h4 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                     <span className="text-2xl">🔄</span> Accountability
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     We stand by our work. With responsive maintenance and real-time system tracking, you're never left in the dark.
                   </p>
                 </CardContent>
@@ -213,15 +213,15 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why Solar? Why Now? Section - Added from Homepage */}
+      {/* Benefits of Solar Section - Updated */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Why Solar? Why Now?
+              Benefits of Solar
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              With rising electricity tariffs and increasing fuel costs following subsidy removal, solar energy has become the smart, reliable, and cost-effective solution. Today's solar technology is more efficient and accessible than ever—making now the ideal time to switch to clean, sustainable power. Nigeria enjoys abundant sunshine, and even in cloudy conditions, modern solar systems continue to deliver dependable performance—keeping you powered, always.
+              Soaring electricity tariffs and rising fuel prices have made energy costs unpredictable—but solar power offers a smarter alternative. By switching to solar, you gain energy independence, reduce your monthly bills, and protect yourself from future price hikes. Today's advanced solar technology is more efficient, affordable, and reliable than ever before. With Nigeria's abundant sunshine, solar energy provides a consistent power supply—even on cloudy days. It's clean, sustainable, and built to keep your home or business running smoothly—day and night. Make the switch today—enjoy peace of mind, long-term savings, and a greener future.
             </p>
           </div>
 
@@ -236,7 +236,7 @@ const About = () => {
                   />
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">Abundant Sunshine</h4>
-                <p className="text-muted-foreground">Nigeria receives excellent solar radiation year-round</p>
+                <p className="text-muted-foreground text-base">Nigeria receives excellent solar radiation year-round</p>
               </CardContent>
             </Card>
 
@@ -250,7 +250,7 @@ const About = () => {
                   />
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">Cost Savings</h4>
-                <p className="text-muted-foreground">Reduce electricity bills by up to 90%</p>
+                <p className="text-muted-foreground text-base">Reduce electricity bills by up to 90%</p>
               </CardContent>
             </Card>
 
@@ -264,13 +264,14 @@ const About = () => {
                   />
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">Environmental Impact</h4>
-                <p className="text-muted-foreground">Clean, renewable energy for a sustainable future</p>
+                <p className="text-muted-foreground text-base">Clean, renewable energy for a sustainable future</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
       
+      {/* The Strategy Behind Our Success */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
@@ -366,7 +367,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Ready to Switch to Solar Energy?
             </h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground mb-8 text-base">
               Get a free consultation and customized quote for your home or business. Our experts will design the perfect solar solution for your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

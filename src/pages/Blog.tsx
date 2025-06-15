@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -27,7 +28,7 @@ const Blog = () => {
       teaser: 'Explore the fascinating journey of solar panel development from early photovoltaic cells to today\'s high-efficiency modules.',
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
       category: 'Solar Technology',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'solar panel evolution, high-efficiency solar panels, types of solar panels, monocrystalline vs polycrystalline, solar power history',
       cta: 'Ready to upgrade to high-efficiency solar panels? Contact us today for a free consultation!'
     },
@@ -35,9 +36,9 @@ const Blog = () => {
       id: 2,
       title: 'What Does a Solar Energy Consultant Really Do? (And Why You Might Need One)',
       teaser: 'Discover the role of solar consultants and how they can help you make the best decisions for your solar investment.',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749970455/solar-power-plant-designing-consultantancy1_lbg4oe.jpg',
       category: 'Solar Basics & Guides',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'solar energy consultant, solar planning, custom solar system, energy audit, solar cost savings',
       cta: 'Need expert solar consultation? Let\'s help you go solar the smart way!'
     },
@@ -47,7 +48,7 @@ const Blog = () => {
       teaser: 'Complete guide covering everything you need to know about residential solar systems in Nigeria\'s unique environment.',
       image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=400&h=300&fit=crop',
       category: 'Tips & Benefits',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'residential solar Nigeria, solar power costs Nigeria, home solar installation, 2025 solar guide',
       cta: 'Ready to start your solar journey in Nigeria? Contact us today for a free consultation!'
     },
@@ -55,9 +56,9 @@ const Blog = () => {
       id: 4,
       title: 'How to Make Your Home More Energy Efficient Before Going Solar',
       teaser: 'Learn practical steps to reduce your energy consumption before installing solar panels for maximum efficiency.',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749970949/energy-efficiency_i9zryy.jpg',
       category: 'Solar Basics & Guides',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'energy-efficient home, reduce energy consumption, pre-solar tips, home energy savings, Nigeria',
       cta: 'Want to optimize your home before going solar? Let\'s help you go solar the smart way!'
     },
@@ -67,7 +68,7 @@ const Blog = () => {
       teaser: 'Comprehensive list of advantages that make solar panels a smart investment for Nigerian homeowners.',
       image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=300&fit=crop',
       category: 'Tips & Benefits',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'benefits of solar panels, solar power Nigeria, why go solar, residential solar benefits, save money with solar',
       cta: 'Ready to enjoy these solar benefits? Contact us today for a free consultation!'
     },
@@ -77,7 +78,7 @@ const Blog = () => {
       teaser: 'Critical mistakes to avoid when selecting a solar installation company to ensure quality and value.',
       image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop',
       category: 'Solar Installation & Safety',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'choosing solar installer, installation mistakes, certified solar companies Nigeria',
       cta: 'Choose the right installer from the start. Contact us today for a free consultation!'
     },
@@ -87,7 +88,7 @@ const Blog = () => {
       teaser: 'Address common safety concerns and myths about rooftop solar panel installations.',
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
       category: 'Solar Installation & Safety',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'rooftop solar safety, structural integrity solar, solar panel risks',
       cta: 'Concerned about solar safety? Let\'s help you go solar the smart way with proper installation!'
     },
@@ -97,7 +98,7 @@ const Blog = () => {
       teaser: 'Explore financing options and payment plans that make solar energy accessible for Nigerian families.',
       image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop',
       category: 'Financing & Investment',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'solar financing Nigeria, pay-as-you-go solar, solar loans and leases',
       cta: 'Explore flexible financing options. Contact us today for a free consultation!'
     },
@@ -107,7 +108,7 @@ const Blog = () => {
       teaser: 'Learn about net metering policies and battery storage solutions for optimal energy management.',
       image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop',
       category: 'Policy & Regulation',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'net metering Nigeria, energy storage systems, excess power credit',
       cta: 'Want to maximize your solar investment with storage? Contact us today for a free consultation!'
     },
@@ -117,7 +118,7 @@ const Blog = () => {
       teaser: 'How small businesses can benefit from solar energy in areas with unreliable electricity supply.',
       image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=400&h=300&fit=crop',
       category: 'Business & Commercial Use',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'solar for business, power backup SME Nigeria, reduce power outages',
       cta: 'Ready to power your business with solar? Let\'s help you go solar the smart way!'
     },
@@ -127,7 +128,7 @@ const Blog = () => {
       teaser: 'Compare different solar system types to determine the best solution for your specific needs.',
       image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop',
       category: 'Solar Basics & Guides',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'grid-tied vs off-grid, hybrid solar system Nigeria, best solar setup',
       cta: 'Not sure which system is right for you? Contact us today for a free consultation!'
     },
@@ -137,7 +138,7 @@ const Blog = () => {
       teaser: 'Explore the environmental benefits of solar energy and its role in creating a sustainable future.',
       image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=300&fit=crop',
       category: 'Environmental Impact',
-      readingTime: '5 min read',
+      readingTime: '2 min read',
       keywords: 'solar energy and climate change, green energy Nigeria, sustainable living solar',
       cta: 'Be part of the sustainable future. Contact us today for a free consultation!'
     }
@@ -194,7 +195,7 @@ const Blog = () => {
                   <CardTitle className="text-xl font-bold text-foreground line-clamp-2 mb-3">
                     {post.title}
                   </CardTitle>
-                  <CardDescription className="text-muted-foreground line-clamp-3 mb-4">
+                  <CardDescription className="text-muted-foreground line-clamp-3 mb-4 text-base">
                     {post.teaser}
                   </CardDescription>
                   
@@ -241,7 +242,7 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Categories Filter - Moved down here */}
+      {/* Categories Filter */}
       <section className="py-8 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -264,7 +265,7 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Continue with existing sections */}
+      {/* Stay Updated with Solar Insights */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Newsletter Signup */}
@@ -283,7 +284,7 @@ const Blog = () => {
                   <input
                     type="email"
                     placeholder="Enter your email address"
-                    className="flex-1 px-4 py-2 border border-input rounded-md bg-background"
+                    className="flex-1 px-4 py-2 border border-input rounded-md bg-background text-base"
                     required
                   />
                   <Button className="px-8">

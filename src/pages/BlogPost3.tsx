@@ -31,7 +31,7 @@ const BlogPost3 = () => {
                 <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                   Tips & Benefits
                 </span>
-                <span className="text-muted-foreground text-sm">5 min read</span>
+                <span className="text-muted-foreground text-sm">2 min read</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 leading-tight">
@@ -51,14 +51,14 @@ const BlogPost3 = () => {
               </p>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">Why Solar Makes Sense in Nigeria</h2>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6 text-base">
                 <li><strong>High Sunlight Availability:</strong> Ideal for solar generation.</li>
                 <li><strong>Unstable Grid Supply:</strong> Frequent blackouts make solar a necessity, not a luxury.</li>
                 <li><strong>Rising Energy Costs:</strong> Solar offers long-term savings and independence.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">Components of a Residential Solar System</h2>
-              <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mb-6">
+              <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mb-6 text-base">
                 <li><strong>Solar Panels:</strong> Capture sunlight and convert it into electricity.</li>
                 <li><strong>Inverter:</strong> Converts DC electricity into usable AC.</li>
                 <li><strong>Battery Storage (Optional):</strong> Stores energy for night use or outages.</li>
@@ -66,14 +66,14 @@ const BlogPost3 = () => {
               </ol>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">Cost Considerations (2025)</h2>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6 text-base">
                 <li><strong>Entry-level Systems:</strong> ~₦500,000–₦1 million for basic lighting and device charging.</li>
                 <li><strong>Mid-range Systems:</strong> ₦1–₦2 million for TV, fridge, fans, etc.</li>
-                <li><strong>Full-Home Systems:</strong> ₦3 million+ for air conditioning, water pumps, and full automation.</li>
+                <li><strong>Full-Home Systems:</strong> ₦3 million+  for air conditioning, water pumps, and full automation.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-foreground mb-4 mt-12">How to Choose the Right Installer</h2>
-              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-8">
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-8 text-base">
                 <li>Check reviews, portfolios, and certifications.</li>
                 <li>Request site visits and multiple quotes.</li>
                 <li>Prioritize after-sales support and warranties.</li>
@@ -83,7 +83,7 @@ const BlogPost3 = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-4">
                   Power Your Home, Your Way
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 text-base">
                   Let us design a custom solar system that fits your needs and budget. Start with a free energy assessment today.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
