@@ -63,6 +63,10 @@ const USPSection = () => {
                   src={usp.image}
                   alt={usp.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  onError={(e) => {
+                    console.log(`Failed to load image for ${usp.title}:`, usp.image);
+                  }}
                 />
               </div>
               <CardContent className="p-6">
