@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -26,12 +25,12 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Remove "Home" link!
+  // Remove "Home" link! And ensure Get Solar Quote always goes to /get-quote
   const navigationItems = [
     // { name: 'HOME', href: '/' },
     {
       name: 'ABOUT US',
-      href: '/About',
+      href: '/about',
     },
     { name: 'SERVICES', href: '/services' },
     { name: 'PRODUCTS', href: '/products' },
@@ -82,69 +81,69 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Right side actions */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden xl:flex items-center">
-              {/* Update Get Solar Quote to /get-quote */}
-              <Link
-                to="/get-quote"
-                className="bg-[#d20500] text-white px-6 py-3 rounded-md font-medium hover:bg-[#b20000] transition-colors text-base"
-                style={{ backgroundColor: "#d20500", color: "#fff" }}
-              >
-                Get Solar Quote
-              </Link>
-            </div>
-
-            {/* Mobile menu */}
-            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="lg:hidden">
-                  <div className="w-4 h-4 flex flex-col justify-center space-y-1">
-                    <div className="w-full h-0.5 bg-current"></div>
-                    <div className="w-full h-0.5 bg-current"></div>
-                    <div className="w-full h-0.5 bg-current"></div>
-                  </div>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col space-y-4 mt-8">
-                  {navigationItems.map((item) => (
-                    <div key={item.name}>
-                      <Link
-                        to={item.href}
-                        className={`text-xl font-medium text-foreground hover:text-primary transition-colors ${
-                          isActiveLink(item.href) ? 'text-primary border-l-2 border-primary pl-2' : ''
-                        }`}
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    </div>
-                  ))}
-                  <div className="pt-4 border-t">
-                    <Link
-                      to="/get-quote"
-                      className="bg-[#d20500] text-white px-4 py-2 rounded-md font-medium hover:bg-[#b20000] transition-colors inline-block text-center w-full"
-                      style={{ backgroundColor: "#d20500", color: "#fff" }}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Get Solar Quote
-                    </Link>
-                    <div className="mt-4">
-                      <p className="text-base text-muted-foreground mb-2">Contact us:</p>
-                      <a href="tel:+2348063840230" className="text-primary font-medium text-base">
-                        +234 806 384 0230
-                      </a>
-                      <br />
-                      <a href="tel:+2348165539671" className="text-primary font-medium text-base">
-                        +234 816 553 9671
-                      </a>
-                    </div>
-                  </div>
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </div>
+              {/* Right side actions */}
+              <div className="flex items-center space-x-4">
+                <div className="hidden xl:flex items-center">
+                  {/* Get Solar Quote always points to our Funnell page */}
+                  <Link
+                    to="/get-quote"
+                    className="bg-[#d20500] text-white px-6 py-3 rounded-md font-medium hover:bg-[#b20000] transition-colors text-base"
+                    style={{ backgroundColor: "#d20500", color: "#fff" }}
+                  >
+                    Get Solar Quote
+                  </Link>
+                </div>
+                {/* Mobile menu */}
+                <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                  <SheetTrigger asChild>
+                    <Button variant="ghost" size="sm" className="lg:hidden">
+                      <div className="w-4 h-4 flex flex-col justify-center space-y-1">
+                        <div className="w-full h-0.5 bg-current"></div>
+                        <div className="w-full h-0.5 bg-current"></div>
+                        <div className="w-full h-0.5 bg-current"></div>
+                      </div>
+                    </Button>
+                  </SheetTrigger>
+                  <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                    <nav className="flex flex-col space-y-4 mt-8">
+                      {navigationItems.map((item) => (
+                        <div key={item.name}>
+                          <Link
+                            to={item.href}
+                            className={`text-xl font-medium text-foreground hover:text-primary transition-colors ${
+                              isActiveLink(item.href) ? 'text-primary border-l-2 border-primary pl-2' : ''
+                            }`}
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {item.name}
+                          </Link>
+                        </div>
+                      ))}
+                      <div className="pt-4 border-t">
+                        <Link
+                          to="/get-quote"
+                          className="bg-[#d20500] text-white px-4 py-2 rounded-md font-medium hover:bg-[#b20000] transition-colors inline-block text-center w-full"
+                          style={{ backgroundColor: "#d20500", color: "#fff" }}
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          Get Solar Quote
+                        </Link>
+                        <div className="mt-4">
+                          <p className="text-base text-muted-foreground mb-2">Contact us:</p>
+                          <a href="tel:+2348063840230" className="text-primary font-medium text-base">
+                            +234 806 384 0230
+                          </a>
+                          <br />
+                          <a href="tel:+2348165539671" className="text-primary font-medium text-base">
+                            +234 816 553 9671
+                          </a>
+                        </div>
+                      </div>
+                    </nav>
+                  </SheetContent>
+                </Sheet>
+              </div>
+            
         </div>
       </div>
     </header>
@@ -152,4 +151,3 @@ const Header = () => {
 };
 
 export default Header;
-

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -50,6 +49,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          {/* Updated GetQuote route to /get-quote for the new funnel */}
           <Route path="/get-quote" element={<GetQuote />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/blog" element={<Blog />} />
