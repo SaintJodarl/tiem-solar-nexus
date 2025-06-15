@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -26,6 +25,17 @@ const Products = () => {
       tags: ['Popular'],
       rating: 4.8,
       detailedDescription: 'Our high-performance Mono and Polycrystalline Solar Panels deliver maximum power in compact designs. Engineered for the Nigerian climate, they provide efficient output even in low-light conditions. These panels offer industry-leading warranties and are perfect for both residential and commercial use.'
+    },
+    {
+      id: 5,
+      name: 'Hybrid Inverters',
+      description: 'Smart hybrid inverters offering seamless power experience with intelligent switching capabilities.',
+      category: 'power-management',
+      features: ['1.2KVA to 10KVA range', 'Compatible with on-grid/off-grid systems', 'Smart energy management features', 'Growatt models available'],
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749990424/h_inverter_ds1pya.webp',
+      tags: ['Smart', 'Popular'],
+      rating: 4.8,
+      detailedDescription: 'Our hybrid inverters offer a seamless power experience, combining utility and solar energy with intelligent switching. Suitable for homes and commercial use, they deliver reliable performance in diverse power environments.'
     },
     {
       id: 2,
@@ -61,17 +71,6 @@ const Products = () => {
       detailedDescription: 'Boost your system\'s efficiency with our MPPT Charge Controllers. They track the ideal operating voltage of your panels, delivering more power and reducing energy loss—perfect for off-grid and hybrid systems.'
     },
     {
-      id: 5,
-      name: 'Hybrid Inverters',
-      description: 'Smart hybrid inverters offering seamless power experience with intelligent switching capabilities.',
-      category: 'power-management',
-      features: ['1.2KVA to 10KVA range', 'Compatible with on-grid/off-grid systems', 'Smart energy management features', 'Growatt models available'],
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749990424/h_inverter_ds1pya.webp',
-      tags: ['Smart', 'Popular'],
-      rating: 4.8,
-      detailedDescription: 'Our hybrid inverters offer a seamless power experience, combining utility and solar energy with intelligent switching. Suitable for homes and commercial use, they deliver reliable performance in diverse power environments.'
-    },
-    {
       id: 6,
       name: 'All-in-One Solar System',
       description: 'Complete solar energy storage system combining high-efficiency technology with robust battery storage.',
@@ -94,17 +93,6 @@ const Products = () => {
       detailedDescription: 'Stay cool with our solar rechargeable fans, designed for all-day use and powered directly by sunlight. When fully charged, they provide hours of cooling comfort at night without needing grid electricity.'
     },
     {
-      id: 8,
-      name: 'Monitoring Device',
-      description: 'Solar monitoring gateway providing live performance updates and emergency control over your system.',
-      category: 'monitoring',
-      features: ['Real-time performance tracking', 'Quick shutdown feature for safety', 'Easy integration with existing systems', 'Helps optimize solar system efficiency'],
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749990824/solar-monitoring-systems_bxxpbi.png',
-      tags: ['Smart', 'Safety'],
-      rating: 4.7,
-      detailedDescription: 'Our solar monitoring gateway provides live performance updates and emergency control over your system. With built-in safety features, it ensures optimal operation and long-term reliability.'
-    },
-    {
       id: 9,
       name: 'Solar Mounting Accessories',
       description: 'Complete set of solar panel mounting accessories for quick and secure installation.',
@@ -125,6 +113,17 @@ const Products = () => {
       tags: ['Essential', 'Safety'],
       rating: 4.5,
       detailedDescription: 'Our MC4 connectors provide secure, weather-proof connections for your solar wiring. With various models available, they fit most installations and ensure efficient current flow without risk of short-circuiting.'
+    },
+    {
+      id: 8,
+      name: 'Monitoring Device',
+      description: 'Solar monitoring gateway providing live performance updates and emergency control over your system.',
+      category: 'monitoring',
+      features: ['Real-time performance tracking', 'Quick shutdown feature for safety', 'Easy integration with existing systems', 'Helps optimize solar system efficiency'],
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749990824/solar-monitoring-systems_bxxpbi.png',
+      tags: ['Smart', 'Safety'],
+      rating: 4.7,
+      detailedDescription: 'Our solar monitoring gateway provides live performance updates and emergency control over your system. With built-in safety features, it ensures optimal operation and long-term reliability.'
     }
   ];
 
@@ -153,7 +152,7 @@ const Products = () => {
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px:8 text-center">
           <h1 className="text-4xl sm:text-6xl font-bold mb-6">Our Solar Products</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Discover our comprehensive range of premium solar solutions designed for Nigerian homes and businesses.
@@ -163,7 +162,7 @@ const Products = () => {
 
       {/* Search and Filter Section */}
       <section className="py-8 bg-background border-b">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px:8">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="relative flex-1 max-w-md">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
@@ -209,7 +208,7 @@ const Products = () => {
 
       {/* Products Grid */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px:8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAndSortedProducts.map((product) => (
               <Card key={product.id} className="hover:shadow-xl transition-all duration-300">
@@ -287,7 +286,7 @@ const Products = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px:8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">Ready to Go Solar?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
