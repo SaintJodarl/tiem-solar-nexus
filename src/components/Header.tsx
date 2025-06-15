@@ -61,7 +61,7 @@ const Header = () => {
           </div>
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden lg:flex">
-            <NavigationMenuList className="space-x-8">
+            <NavigationMenuList className="space-x-8 mt-5">
               {navigationItems.map((item) => (
                 <NavigationMenuItem key={item.name}>
                   <NavigationMenuLink asChild>
