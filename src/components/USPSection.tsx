@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,19 +9,19 @@ const USPSection = () => {
       icon: '🎓',
       title: 'Certified Engineers',
       description: 'Licensed professionals with proven track record in solar installations',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838823/emmanuel-ikwuegbu-zWOgsj3j0wA-unsplash_cwr8kl.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
     },
     {
       icon: '⚡',
       title: 'Quality Equipment',
       description: 'Premium solar panels and components from trusted global manufacturers',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749843663/681b308dbc6a3710aa5c1132_pasted-image-0--20--compressed_dstehl.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
     },
     {
       icon: '💰',
       title: 'Affordable Pricing',
       description: 'Competitive rates with flexible payment plans for all budgets',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837751/allison-saeng-HrFCxo0Go5Y-unsplash_yiv4sp.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
     },
     {
       icon: '🇳🇬',
@@ -32,13 +33,13 @@ const USPSection = () => {
       icon: '🛡️',
       title: 'Comprehensive Warranty',
       description: '25-year panel warranty and 5-year installation guarantee',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837748/award_ribbon_check_mark_with_stars_gradient_style_lfcbmf.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
     },
     {
       icon: '📞',
       title: '24/7 Support',
       description: 'Round-the-clock technical support and maintenance services',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837750/247-hours-open-helpline-yellow-template-design_1017-54495_e6idgj.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
     }
   ];
 
