@@ -33,6 +33,7 @@ const Header = () => {
       href: '/about',
     },
     { name: 'SERVICES', href: '/services' },
+    { name: 'PRODUCTS', href: '/products' },
     { name: 'STORE', href: '/store' },
     { name: 'PROJECTS', href: '/projects' },
     { name: 'CONTACT', href: '/contact' },
@@ -47,7 +48,7 @@ const Header = () => {
 
   return (
     <header className={`h-20 sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-all duration-300 ${isScrolled ? 'bg-accent' : 'bg-background/95'}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px:8">
         <div className="flex items-center justify-between h-16">
           {/* Logo — acts as home button */}
           <div className="flex-shrink-0">
@@ -135,7 +136,7 @@ const Header = () => {
                           </a>
                           <br />
                           <a href="tel:+2348165539671" className="text-primary font-medium text-base">
-                            +234 816 553 9671
+                            +234 816 5539671
                           </a>
                         </div>
                       </div>
