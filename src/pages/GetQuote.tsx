@@ -16,7 +16,7 @@ const solarPackages = [
   {
     price: "₦12,000",
     period: "per month",
-    image: "/lovable-uploads/5c9983d7-6a7c-4157-ae97-fed8bf4ef915.png", // Using reference from uploaded image
+    image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp",
     components: ["X2 Solar Panels", "X1 Inverter", "X1 Battery", "X1 Controller"],
     whatYouCanPower: ["LED Lights", "Fans", "Phone Charging", "Small TV"],
     warranty: "2 Years Full Warranty",
@@ -26,7 +26,7 @@ const solarPackages = [
   {
     price: "₦24,000",
     period: "per month",
-    image: "/lovable-uploads/5c9983d7-6a7c-4157-ae97-fed8bf4ef915.png",
+    image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp",
     components: ["X4 Solar Panels", "X1 Inverter", "X2 Batteries", "X1 Controller"],
     whatYouCanPower: ["All lights", "Multiple fans", "TV", "Refrigerator", "Laptop"],
     warranty: "3 Years Full Warranty",
@@ -36,7 +36,7 @@ const solarPackages = [
   {
     price: "₦36,000",
     period: "per month",
-    image: "/lovable-uploads/5c9983d7-6a7c-4157-ae97-fed8bf4ef915.png",
+    image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp",
     components: ["X6 Solar Panels", "X1 Inverter", "X2 Batteries", "X1 Controller"],
     whatYouCanPower: ["Whole house basics", "AC (small)", "Washing machine", "Multiple appliances"],
     warranty: "5 Years Full Warranty",
@@ -46,7 +46,7 @@ const solarPackages = [
   {
     price: "₦48,000",
     period: "per month",
-    image: "/lovable-uploads/5c9983d7-6a7c-4157-ae97-fed8bf4ef915.png",
+    image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp",
     components: ["X8 Solar Panels", "X2 Inverters", "X4 Batteries", "X1 Controller"],
     whatYouCanPower: ["Entire house", "Multiple ACs", "All appliances", "Commercial use"],
     warranty: "7 Years Full Warranty",
@@ -134,9 +134,9 @@ export default function GetQuote() {
       </section>
 
       {/* Solar Packages Section */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#1e3a8a" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: accentYellow }}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="font-bold text-4xl text-center mb-16 text-white">
+          <h2 className="font-bold text-4xl text-center mb-16" style={{ color: brandRed }}>
             Choose Your Solar Package
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -145,7 +145,7 @@ export default function GetQuote() {
                 <CardHeader className="text-center pb-4">
                   <div className="mb-4">
                     <img 
-                      src="/lovable-uploads/46921667-e72c-478b-836b-a6b70f717c00.png"
+                      src={pkg.image}
                       alt="Solar System"
                       className="w-full h-32 object-contain"
                     />
@@ -285,7 +285,7 @@ export default function GetQuote() {
       </section>
 
       {/* Process Steps Section */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#1e3a8a" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: brandRed }}>
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-bold text-4xl mb-16 text-white">
             FOUR EASY STEPS TO GOING SOLAR TODAY
@@ -294,7 +294,7 @@ export default function GetQuote() {
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
                 <div className="mb-4">
-                  <span className="text-3xl font-bold" style={{ color: "#22c55e" }}>
+                  <span className="text-3xl font-bold" style={{ color: accentYellow }}>
                     Step {step.step}
                   </span>
                 </div>
@@ -305,8 +305,8 @@ export default function GetQuote() {
           </div>
           <Button
             size="lg"
-            className="font-bold px-8 py-4 rounded-lg text-white"
-            style={{ backgroundColor: "#22c55e" }}
+            className="font-bold px-8 py-4 rounded-lg"
+            style={{ backgroundColor: accentYellow, color: brandRed }}
             onClick={handleScrollToForm}
           >
             BOOK SOLAR EVALUATION
@@ -328,7 +328,7 @@ export default function GetQuote() {
 
       {/* Testimonials Section */}
       <section className="py-16 px-4 bg-[#f7f7fa]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="font-bold text-3xl text-center mb-8" style={{ color: brandRed }}>
             CHECK OUT WHAT CLIENTS SAY
           </h2>
