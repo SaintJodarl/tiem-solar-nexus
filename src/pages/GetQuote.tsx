@@ -2,12 +2,11 @@
 import React, { useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContactSection from "@/components/ContactSection";
-import Testimonials from "@/components/Testimonials";
+import FunnelContactSection from "@/components/FunnelContactSection";
+import FunnelTestimonials from "@/components/FunnelTestimonials";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 const brandRed = "#d20500";
 const accentYellow = "#ffd901";
@@ -42,6 +41,7 @@ export default function GetQuote() {
       formRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div className="flex flex-col min-h-screen font-sans" style={{ background: "linear-gradient(135deg, #fff 0%, #fff 100%)" }}>
       <Header />
@@ -73,8 +73,8 @@ export default function GetQuote() {
             Get Your Free Solar Quote
           </h2>
           <div className="rounded-2xl shadow-lg p-6 bg-white animate-scale-in">
-            {/* Embedded ContactForm (same as Contact Page) */}
-            <ContactSection
+            {/* FunnelContactSection handles funnel-specific props */}
+            <FunnelContactSection
               redirectToThankYou={"/thank-you"}
               ctaText="Get My Quote"
               ctaColor={brandRed}
@@ -91,9 +91,9 @@ export default function GetQuote() {
           <h2 className="font-bold text-3xl text-center mb-8" style={{ color: brandRed }}>
             What Our Clients Say
           </h2>
-          <Testimonials
+          <FunnelTestimonials
             limit={3}
-            animateOnScroll
+            animateOnScroll={true}
             cardColor="#fff"
             textColor="#222"
             accentColor={accentYellow}
