@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -345,9 +344,8 @@ export default function GetQuote() {
           <Accordion type="multiple" className="space-y-4">
             {faqs.map((item, idx) => (
               <AccordionItem key={idx} value={`faq-${idx}`} className="bg-[#f7f7fa] rounded-lg animate-fade-in" style={{ animationDelay: `${0.1 * idx}s` }}>
-                <AccordionTrigger className="flex justify-between items-center p-4 text-lg font-semibold text-[#222] w-full">
+                <AccordionTrigger className="flex justify-between items-center p-4 text-lg font-semibold text-[#222] w-full [&>svg]:text-[#d20500]">
                   <span>{item.q}</span>
-                  <ChevronDown className="ml-2 h-5 w-5 text-[#d20500]" />
                 </AccordionTrigger>
                 <AccordionContent className="p-4 text-gray-700 border-t text-base">
                   {item.a}
