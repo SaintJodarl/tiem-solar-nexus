@@ -7,7 +7,7 @@ const BenefitsSection = () => {
     {
       title: 'Optimized for Nigerian Climate',
       description: 'Our solar solutions are engineered to withstand Nigeria\'s unique weather patterns, ensuring maximum efficiency year-round.',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838880/ovinuchi-ejiohuo-Qe9S79-5iD0-unsplash_ntnmzy.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749837754/ovinuchi-ejiohuo-Qe9S79-5iD0-unsplash_nmdzmz.jpg'
     },
     {
       title: 'Cutting-Edge Technology Integration',
