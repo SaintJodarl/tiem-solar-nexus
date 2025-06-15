@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/1d2fb112-5129-4d2a-b139-7d1a61a564a1.png" 
+              src="/lovable-uploads/98861454-0199-48d1-887a-bcf914504dd1.png" 
               alt="TIEM Energy Logo" 
               className="h-20 w-auto mb-4"
             />

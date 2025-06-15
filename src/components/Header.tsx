@@ -53,7 +53,7 @@ const Header = () => {
           <div className="flex-shrink-0 mt-3">
             <Link to="/" className="flex items-center" aria-label="TIEM Energy Home">
               <img
-                src="/lovable-uploads/1d2fb112-5129-4d2a-b139-7d1a61a564a1.png"
+                src="/lovable-uploads/98861454-0199-48d1-887a-bcf914504dd1.png"
                 alt="TIEM Energy Logo"
                 className="h-20 w-auto cursor-pointer"
               />
