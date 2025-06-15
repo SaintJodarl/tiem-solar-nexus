@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -26,7 +25,7 @@ const Products = () => {
     description: 'Perfect for small homes and apartments with basic power needs.',
     category: 'residential',
     features: ['Basic lighting', 'Phone charging', 'Small appliances'],
-    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749844370/Growatt_5_ztwzea.webp',
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978592/Fecicity_KVA_bc7lrl.jpg',
     tags: ['New Arrival'],
     inStock: true,
     rating: 4.5,
@@ -43,7 +42,7 @@ const Products = () => {
     description: 'Ideal for medium-sized homes with moderate power consumption.',
     category: 'residential',
     features: ['LED TV', 'Refrigerator', 'Fans', 'Lighting', 'Phone charging'],
-    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749845097/Complete-Solar-System-3kw-off-Grid-Solar-Energy-System_q7vb24.avif',
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp',
     tags: ['Popular'],
     inStock: true,
     rating: 4.7,
@@ -62,7 +61,7 @@ const Products = () => {
     category: 'residential',
     features: ['6 Solar Panels (480W)', 'Energy-saving fridge', 'TV & Sound System', 'Fans & Decoders', 'Lights & Charging Points'],
     highlight: true,
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978592/Fecicity_KVA_bc7lrl.jpg',
     tags: ['Best Seller', 'Featured'],
     inStock: true,
     rating: 4.9,
@@ -80,7 +79,7 @@ const Products = () => {
     description: 'Perfect for larger homes and small businesses.',
     category: 'commercial',
     features: ['Multiple appliances', 'AC units', 'Business equipment'],
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp',
     tags: ['Commercial'],
     inStock: true,
     rating: 4.6,
@@ -97,7 +96,7 @@ const Products = () => {
     description: 'Commercial-grade system for businesses and large homes.',
     category: 'commercial',
     features: ['Industrial equipment', 'Multiple AC units', 'Commercial appliances'],
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp',
     tags: ['Industrial'],
     inStock: true,
     rating: 4.8,
@@ -114,7 +113,7 @@ const Products = () => {
     description: 'Heavy-duty commercial and industrial applications.',
     category: 'industrial',
     features: ['Factory equipment', 'Large commercial spaces', 'Industrial machinery'],
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
+    image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749978623/Mercury-3.5kva-Solar-Hybrid-Inverter-MPPT-8x-Solar-Panels-1_ppqaxv.webp',
     tags: ['Industrial', 'Heavy Duty'],
     inStock: false,
     rating: 4.7,
