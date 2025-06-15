@@ -13,10 +13,10 @@ const Footer = () => {
     'Mounting Systems',
   ];
 
-  // Removed IBUSA from quick links
   const quickLinks = [
     { name: 'About Us', href: '/about' },
     { name: 'Products', href: '/products' },
+    { name: 'IBUSA', href: '/ibusa' },
     { name: 'Installation Services', href: '/services' },
     { name: 'Warranties', href: '/services' },
     { name: 'FAQs', href: '/blog' },

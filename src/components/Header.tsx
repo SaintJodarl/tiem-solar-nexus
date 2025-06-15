@@ -26,7 +26,6 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Removed IBUSA from navigation items
   const navigationItems = [
     {
       name: 'ABOUT US',
@@ -34,6 +33,7 @@ const Header = () => {
     },
     { name: 'SERVICES', href: '/services' },
     { name: 'PRODUCTS', href: '/products' },
+    { name: 'IBUSA', href: '/ibusa' },
     { name: 'PROJECTS', href: '/projects' },
     { name: 'CONTACT', href: '/contact' },
     { name: 'BLOG', href: '/blog' },
