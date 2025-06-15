@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -74,13 +73,7 @@ export default function GetQuote() {
           </h2>
           <div className="rounded-2xl shadow-lg p-6 bg-white animate-scale-in">
             {/* FunnelContactSection handles funnel-specific props */}
-            <FunnelContactSection
-              redirectToThankYou={"/thank-you"}
-              ctaText="Get My Quote"
-              ctaColor={brandRed}
-              accentColor={accentYellow}
-              hideTitle
-            />
+            <FunnelContactSection />
           </div>
         </div>
       </section>
@@ -91,14 +84,7 @@ export default function GetQuote() {
           <h2 className="font-bold text-3xl text-center mb-8" style={{ color: brandRed }}>
             What Our Clients Say
           </h2>
-          <FunnelTestimonials
-            limit={3}
-            animateOnScroll={true}
-            cardColor="#fff"
-            textColor="#222"
-            accentColor={accentYellow}
-            brandRed={brandRed}
-          />
+          <FunnelTestimonials />
         </div>
       </section>
 
