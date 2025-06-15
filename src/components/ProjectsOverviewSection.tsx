@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -6,25 +5,25 @@ const ProjectsOverviewSection = () => {
   const projects = [
     {
       title: "2.5kVA Solar Install",
-      location: "Ogba, Lagos",
+      location: "Ogba, Lagos State",
       description: "Residential solar system for 3-bedroom home",
       image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841681/2..5KVA_nouewt.jpg"
     },
     {
       title: "5kVA Commercial Setup",
-      location: "Agege, Lagos",
+      location: "Agege, Lagos State",
       description: "Business solar solution for retail store",
       image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841849/5KVA_wownjw.jpg"
     },
     {
       title: "10kVA Enterprise System",
-      location: "Yaba, Lagos", 
+      location: "Yaba, Lagos State", 
       description: "Large-scale solar installation for office complex",
       image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841915/10KVA_pswc4r.jpg"
     },
     {
       title: "3.5kVA Home Solution",
-      location: "Ibadan",
+      location: "Ibadan, Oyo State",
       description: "Complete solar package for family residence",
       image: "https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841679/3.5KVA_jxaatm.jpg"
     }

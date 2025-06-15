@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,21 +10,21 @@ const Projects = () => {
     {
       name: '2.5kVA Solar System – Lagos',
       description: 'Installed for a family: 1 inverter, 2 batteries, 4 solar panels. Reliable power during outages.',
-      location: 'Lagos State',
+      location: 'Ogba, Lagos State',
       capacity: '2.5kVA',
       image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841681/2..5KVA_nouewt.jpg'
     },
     {
       name: '5kVA Commercial Setup – Abuja',
       description: 'Small business solution with backup power for shop operations and lighting.',
-      location: 'Abuja',
+      location: 'Agege, Lagos State',
       capacity: '5kVA',
       image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841849/5KVA_wownjw.jpg'
     },
     {
       name: '10kVA Industrial System – Kano',
       description: 'Medium-scale industrial installation for textile manufacturing facility.',
-      location: 'Kano State',
+      location: 'Yaba, Lagos State',
       capacity: '10kVA',
       image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749841915/10KVA_pswc4r.jpg'
     },
@@ -39,37 +38,37 @@ const Projects = () => {
     {
       name: '20kVA Factory Setup – Shomolu',
       description: 'Large-scale solar installation for textile customization factory.',
-      location: 'Shomolu, Lagos',
+      location: 'Ojodu Berger, Lagos',
       capacity: '20kVA',
-      image: 'https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991921/WhatsApp_Image_2025-06-04_at_9.08.22_AM_2_mxtih4.jpg'
     },
     {
       name: '1kVA Apartment Solution – Port Harcourt',
       description: 'Compact solar system for studio apartment with basic power needs.',
-      location: 'Port Harcourt',
+      location: 'Olambe, Ogun State',
       capacity: '1kVA',
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991912/WhatsApp_Image_2025-06-04_at_9.13.11_AM_kclj0l.jpg'
     },
     {
       name: '7.5kVA Office Complex – Kaduna',
       description: 'Commercial office building with reliable solar backup power system.',
-      location: 'Kaduna State',
+      location: 'Akute, Ogun State',
       capacity: '7.5kVA',
-      image: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991904/WhatsApp_Image_2025-06-04_at_9.13.09_AM_szope3.jpg'
     },
     {
       name: '15kVA Hospital Installation – Enugu',
       description: 'Critical power backup for medical facility with 24/7 operation requirements.',
-      location: 'Enugu State',
+      location: 'Ota, Ogun State',
       capacity: '15kVA',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991902/WhatsApp_Image_2025-06-04_at_9.12.58_AM_xorscw.jpg'
     },
     {
       name: '5kVA School Project – Ogun',
       description: 'Educational institution solar installation for classrooms and administrative offices.',
-      location: 'Ogun State',
+      location: 'Ifako, Lagos State',
       capacity: '5kVA',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991899/WhatsApp_Image_2025-06-04_at_9.12.58_AM_1_oijqqk.jpg'
     }
   ];
 
