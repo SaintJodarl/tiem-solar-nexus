@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
@@ -12,10 +13,10 @@ const Footer = () => {
     'Mounting Systems',
   ];
 
+  // Removed IBUSA from quick links
   const quickLinks = [
     { name: 'About Us', href: '/about' },
     { name: 'Products', href: '/products' },
-    { name: 'Ibusa', href: '/store' },
     { name: 'Installation Services', href: '/services' },
     { name: 'Warranties', href: '/services' },
     { name: 'FAQs', href: '/blog' },
@@ -31,7 +32,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/1d2fb112-5129-4d2a-b139-7d1a61a564a1.png" 
               alt="TIEM Energy Logo" 
-              className="h-16 w-auto mb-4"
+              className="h-20 w-auto mb-4"
             />
             <p className="text-background/80 text-base leading-relaxed">
               Leading provider of high-quality solar energy solutions across Nigeria. Empowering homes and businesses with reliable, affordable solar power.
@@ -58,13 +59,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Product Categories */}
+          {/* Product Categories - now links to products page instead of store */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-accent">Product Categories</h4>
             <ul className="space-y-2">
               {productCategories.map((category) => (
                 <li key={category}>
-                  <Link to="/store" className="text-background/80 hover:text-accent transition-colors text-base">
+                  <Link to="/products" className="text-background/80 hover:text-accent transition-colors text-base">
                     {category}
                   </Link>
                 </li>
