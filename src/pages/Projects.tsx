@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -65,11 +64,11 @@ const Projects = () => {
       image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991902/WhatsApp_Image_2025-06-04_at_9.12.58_AM_xorscw.jpg'
     },
     {
-      name: '5kVA School Project – Ifako',
+      name: '1kVA School Project – Ifako',
       description: 'Educational institution solar installation for classrooms and administrative offices.',
       location: 'Ifako, Lagos State',
-      capacity: '5kVA',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991899/WhatsApp_Image_2025-06-04_at_9.12.58_AM_1_oijqqk.jpg'
+      capacity: '1kVA',
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749991923/WhatsApp_Image_2025-06-04_at_9.08.22_AM_1_qf3kur.jpg'
     }
   ];
 
