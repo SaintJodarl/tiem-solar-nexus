@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -27,7 +26,7 @@ const USPSection = () => {
       icon: '🇳🇬',
       title: 'Local Expertise',
       description: 'Deep understanding of Nigerian climate and energy requirements',
-      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749838824/2148894014_tg2suc.jpg'
+      image: 'https://res.cloudinary.com/dt7mxnrxo/image/upload/v1749974734/Nigeria_Climate_sucwx7.png'
     },
     {
       icon: '🛡️',
