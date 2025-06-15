@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,10 +10,30 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { Shield, Truck, Clock, ArrowLeft, CreditCard, Smartphone, Building, Bitcoin } from 'lucide-react';
 
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  address: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  paymentMethod: string;
+  installationDate: string;
+  specialInstructions: string;
+  agreeToTerms: boolean;
+  subscribeNewsletter: boolean;
+}
+
+interface FormErrors {
+  [key: string]: string;
+}
+
 const Checkout = () => {
   const [orderPlaced, setOrderPlaced] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     // Personal Information
     firstName: '',
     lastName: '',
@@ -37,7 +56,7 @@ const Checkout = () => {
     subscribeNewsletter: false
   });
   
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<FormErrors>({});
   const { toast } = useToast();
 
   // Mock cart data
@@ -68,18 +87,18 @@ const Checkout = () => {
     }
   };
 
-  const handleCheckboxChange = (name: string, checked: boolean) => {
+  const handleCheckboxChange = (name: string, checked: boolean | string) => {
     setFormData(prev => ({
       ...prev,
-      [name]: checked
+      [name]: checked === true
     }));
   };
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: FormErrors = {};
     
     // Required fields validation
-    const requiredFields = {
+    const requiredFields: Record<keyof FormData, string> = {
       firstName: 'First name is required',
       lastName: 'Last name is required',
       email: 'Email is required',
@@ -87,11 +106,16 @@ const Checkout = () => {
       address: 'Address is required',
       city: 'City is required',
       state: 'State is required',
-      paymentMethod: 'Payment method is required'
+      paymentMethod: 'Payment method is required',
+      postalCode: '',
+      installationDate: '',
+      specialInstructions: '',
+      agreeToTerms: '',
+      subscribeNewsletter: ''
     };
     
     Object.entries(requiredFields).forEach(([field, message]) => {
-      if (!formData[field].trim()) {
+      if (message && typeof formData[field as keyof FormData] === 'string' && !String(formData[field as keyof FormData]).trim()) {
         newErrors[field] = message;
       }
     });
